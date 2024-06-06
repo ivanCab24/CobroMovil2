@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Common attributes -->
+
+    <attr name="logo" format="reference" />
+
+    <attr name="fondo_negro" format="reference" />
+    <attr name="fondo_dialogs" format="reference" />
+    <attr name="icon_acomer" format="reference"/>
+    <attr name="fondo_editText_login" format="reference" />
+    <attr name="estilo_textview_dialog_title" format="reference" />
+    <attr name="estilo_edittext_settings" format="reference" />
+    <attr name="estilo_botones_settings" format="reference" />
+    <attr name="estilo_botones_propina" format="reference" />
+    <attr name="estilo_edittext_propina" format="reference" />
+    <attr name="estilo_edittext_mesa" format="reference" />
+    <attr name="estilo_checkbox_cuenta" format="reference" />
+    <attr name="estilo_numberpicker_buttons" format="reference" />
+    <attr name="estilo_boton_porcobrar" format="reference" />
+    <attr name="estilo_textview_dialog_message" format="reference" />
+    <attr name="estilo_botones_dialog" format="reference" />
+    <attr name="estilos_textos_dialog_reimprimir" format="reference" />
+    <attr name="estilos_edittext_dialog" format="reference" />
+    <attr name="estilos_textview_dialog_imprimir" format="reference" />
+    <attr name="estilo_textview_dialog_charge" format="reference" />
+    <attr name="estilo_textview_total_charge" format="reference" />
+    <attr name="estilo_radiobutton_filter" format="reference" />
+    <attr name="estilo_textview_filtrarpor" format="reference" />
+    <attr name="color_oval_shape" format="reference" />
+    <attr name="circulo_central" format="reference" />
+    <attr name="fondo_nodialog_button" format="reference" />
+    <attr name="fondo_separadores" format="reference" />
+    <attr name="textview_menu_lateral" format="reference" />
+    <attr name="textview_titulos" format="reference" />
+    <attr name="textview_subtitulos" format="reference" />
+    <attr name="textview_titulos_pagos" format="reference" />
+    <attr name="textview_printer" format="reference" />
+    <attr name="color_card_item" format="reference" />
+    <attr name="color_card_item_opcional" format="reference"/>
+    <attr name="color_descripcion_descuento" format="reference" />
+    <attr name="estilo_textview_descuento_aplicado_item" format="reference" />
+    <attr name="estilo_textview_pago_item" format="reference" />
+    <attr name="color_tint" format="reference"/>
+    <attr name="color_progressbar" format="reference" />
+
+    <attr name="icon_user" format="reference"/>
+    <attr name="icon_password" format="reference" />
+    <attr name="icon_subir" format="reference" />
+    <attr name="icon_settings_login" format="reference"/>
+    <attr name="icon_upload_files" format="reference" />
+    <attr name="icon_ip" format="reference" />
+    <attr name="icon_pinpad" format="reference" />
+    <attr name="icon_unidad" format="reference" />
+    <attr name="icon_impresora" format="reference" />
+    <attr name="icon_reset_keys" format="reference" />
+    <attr name="icon_identificar_miembro" format="reference" />
+    <attr name="icon_reimprimir" format="reference" />
+    <attr name="icon_salir" format="reference" />
+    <attr name="icon_peso" format="reference" />
+    <attr name="icon_porcentaje" format="reference" />
+    <attr name="icon_delete" format="reference" />
+    <attr name="icon_reimprimir_boucher" format="reference" />
+    <attr name="icon_reimprimir_ticket" format="reference" />
+    <attr name="icon_actualizar" format="reference" />
+    <attr name="icon_close" format="reference" />
+    <attr name="icon_cancelar" format="reference" />
+    <attr name="icon_correo" format="reference" />
+    <attr name="icon_sms" format="reference" />
+    <attr name="icon_imprimir" format="reference" />
+    <attr name="icon_escanear" format="reference" />
+    <attr name="icon_aceptar" format="reference" />
+    <attr name="icon_mp_mini" format="reference" />
+    <attr name="icon_inicio" format="reference" />
+    <attr name="icon_caja" format="reference"/>
+    <attr name="icon_close_account" format="reference" />
+    <attr name="icon_descarga" format="reference" />
+
+</resources>
+

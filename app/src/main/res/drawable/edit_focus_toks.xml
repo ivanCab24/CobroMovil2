@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/editText_focus_padding"
+    android:shape="rectangle" >
+    <solid android:color="@color/whiteToks" />
+
+    <stroke
+        android:width="@dimen/editText_focus_stroke"
+        android:color="@color/naranjaToks" />
+    <corners
+        android:bottomLeftRadius="@dimen/editText_focus_bottom_left_redius"
+        android:bottomRightRadius="@dimen/editText_focus_bottom_right_redius"
+        android:topLeftRadius="@dimen/editText_focus_top_left_redius"
+        android:topRightRadius="@dimen/editText_focus_top_right_redius" />
+</shape>

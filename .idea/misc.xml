@@ -1,0 +1,115 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/actualizar_ss.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/bg_selected.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/btn.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/btn_foreground.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/color_edit_text_cursor.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/color_edit_text_cursor_farolito.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/color_edit_text_cursor_ss.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/dialog_redondo.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/edit_focus.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/edit_focus_farolito.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/edit_focus_ss.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/edit_normal.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/edit_normal_ss.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/edit_text_error_ss.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/efecto_boton_farolito.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/efecto_boton_ss.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/efecto_boton_toks.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/efecto_edit_text.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/efecto_edit_text_farolito.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/efecto_edit_text_ss.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/estilo_boton_ss.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/fondo_a_cobrar.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/gradient.xml" value="0.299" />
+        <entry key="app/src/main/res/drawable/gradient_farolito.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/gradient_ss.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/ic_cajero.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/ic_cajero_farolito.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/ic_cajero_toks.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/ic_cancel_24.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/ic_cerrar_sesion_ss.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/ic_close_ss.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/ic_descarga.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_descarga_ss.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/ic_id_local_ss.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/ic_impresora_ss.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/ic_impresora_toks.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/ic_ip_ss.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_llaves_ss.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/ic_settings_ss.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_terminal_ss.xml" value="0.2695" />
+        <entry key="app/src/main/res/drawable/radio_bg.xml" value="0.2195" />
+        <entry key="app/src/main/res/drawable/radio_pressed.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/rounded_linear_farolito.xml" value="0.246" />
+        <entry key="app/src/main/res/drawable/rounded_linear_ss.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/scroll.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/sssss.xml" value="0.2195" />
+        <entry key="app/src/main/res/drawable/tabla_celda_cabecera.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/tabla_celda_cabecera_farol.xml" value="0.2195" />
+        <entry key="app/src/main/res/drawable/tabla_celda_cabecera_toks.xml" value="0.2195" />
+        <entry key="app/src/main/res/drawable/tabla_celda_cabecera_white.xml" value="0.155" />
+        <entry key="app/src/main/res/drawable/ticketbtn.xml" value="0.2195" />
+        <entry key="app/src/main/res/layout-large/actividad_principal.xml" value="0.4559442661607357" />
+        <entry key="app/src/main/res/layout-large/activity_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-large/activity_pinpad_e285_bt.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-large/card_item.xml" value="1.3030075073242189" />
+        <entry key="app/src/main/res/layout-large/card_item_descuentos_aplicados.xml" value="0.11612021857923498" />
+        <entry key="app/src/main/res/layout-large/custom_dialog_acomer_layout.xml" value="0.5" />
+        <entry key="app/src/main/res/layout-large/custom_dialog_multiple_descuento.xml" value="0.11612021857923498" />
+        <entry key="app/src/main/res/layout-large/custom_dialog_rendencion_puntos.xml" value="0.5" />
+        <entry key="app/src/main/res/layout-large/custom_dialog_selecciona_tema_marca.xml" value="0.45" />
+        <entry key="app/src/main/res/layout-large/custom_printer_layout.xml" value="0.475" />
+        <entry key="app/src/main/res/layout-large/fragment_content.xml" value="0.3559718969555035" />
+        <entry key="app/src/main/res/layout-large/fragment_historicos_pagos.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-large/input_dialog_layout.xml" value="0.5" />
+        <entry key="app/src/main/res/layout-large/pinpad_item.xml" value="0.375" />
+        <entry key="app/src/main/res/layout-large/settings_dialog_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-large/visualizador_dialog.xml" value="0.310126582278481" />
+        <entry key="app/src/main/res/layout-large/wait_dialog.xml" value="0.2435129740518962" />
+        <entry key="app/src/main/res/layout-large/wait_dialog_files.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-xlarge/activity_login.xml" value="0.2375" />
+        <entry key="app/src/main/res/layout/actividad_principal.xml" value="0.3012345679012346" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.24497991967871485" />
+        <entry key="app/src/main/res/layout/activity_pinpad_e285_bt.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/bonded_pinpad_item.xml" value="0.21185897435897436" />
+        <entry key="app/src/main/res/layout/card_item.xml" value="0.42622019449869786" />
+        <entry key="app/src/main/res/layout/charge_input_dialog_layout.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/comensal_item.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/cupon_seleccionado_item.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/custom_dialog_acomer_layout.xml" value="0.27115384615384613" />
+        <entry key="app/src/main/res/layout/custom_dialog_layout.xml" value="0.14462416745956233" />
+        <entry key="app/src/main/res/layout/custom_dialog_mercadopago_layout.xml" value="0.1539855072463768" />
+        <entry key="app/src/main/res/layout/custom_dialog_redencion_cupon.xml" value="0.475" />
+        <entry key="app/src/main/res/layout/custom_dialog_rendencion_puntos.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/custom_dialog_selecciona_tema_marca.xml" value="0.27115384615384613" />
+        <entry key="app/src/main/res/layout/custom_layout_sms.xml" value="0.27115384615384613" />
+        <entry key="app/src/main/res/layout/custom_layout_ticket.xml" value="0.27115384615384613" />
+        <entry key="app/src/main/res/layout/custom_printer_layout.xml" value="0.27115384615384613" />
+        <entry key="app/src/main/res/layout/dialog_comidas.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/dialog_cupones_descuentos.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/dialog_select_printer.xml" value="0.4085714285714286" />
+        <entry key="app/src/main/res/layout/fragment_content.xml" value="0.28396739130434784" />
+        <entry key="app/src/main/res/layout/fragment_content2.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/fragment_historicos_pagos.xml" value="0.18437132904495018" />
+        <entry key="app/src/main/res/layout/input_dialog_layout.xml" value="0.2518197809240605" />
+        <entry key="app/src/main/res/layout/pinpad_item.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/question_dialog_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/settings_dialog_layout.xml" value="0.28396739130434784" />
+        <entry key="app/src/main/res/layout/visualizador_dialog.xml" value="0.17294117647058824" />
+        <entry key="app/src/main/res/layout/wait_dialog.xml" value="0.1694381713867188" />
+        <entry key="app/src/main/res/layout/wait_dialog_buttons.xml" value="0.28525641025641024" />
+        <entry key="app/src/main/res/layout/wait_dialog_files.xml" value="0.14462416745956233" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" value="$USER_HOME$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" default="true" project-jdk-name="zulu-15" project-jdk-type="JavaSDK" />
+</project>

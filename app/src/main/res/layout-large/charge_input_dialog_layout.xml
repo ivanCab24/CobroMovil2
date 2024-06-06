@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?attr/fondo_dialogs"
+    android:orientation="horizontal">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            style="?attr/estilo_textview_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/textView_dialog_charge_title_margin_top"
+            android:text="Monto a Abonar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dialogMessage"
+            style="?attr/estilo_textview_dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/textView_dialog_charge_message_margin_top"
+            android:text="@string/cargo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialogTitle" />
+
+        <TextView
+            android:id="@+id/textView20"
+            style="?attr/estilo_textview_dialog_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/textView_dialog_charge_monto_margin_start"
+            android:layout_marginTop="@dimen/textView_dialog_charge_monto_margin_top"
+            android:text="Monto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialogMessage" />
+
+        <EditText
+            android:id="@+id/montoEditText"
+            style="?attr/estilos_edittext_dialog"
+            android:layout_width="@dimen/editText_dialog_charge_monto_propina_width"
+            android:layout_height="@dimen/editText_dialog_charge_monto_propina_height"
+            android:layout_marginEnd="@dimen/editText_dialog_charge_monto_margin_end"
+            android:inputType="number|numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.859"
+            app:layout_constraintStart_toEndOf="@+id/textView20"
+            app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView21"
+            style="?attr/estilo_textview_dialog_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/textView_dialog_charge_propina_margin_top"
+            android:text="Propina"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <EditText
+            android:id="@+id/propinaEditText"
+            style="?attr/estilos_edittext_dialog"
+            android:layout_width="@dimen/editText_dialog_charge_monto_propina_width"
+            android:layout_height="@dimen/editText_dialog_charge_monto_propina_height"
+            android:layout_marginTop="@dimen/editText_dialog_charge_propina_margin_top"
+            android:inputType="number|numberDecimal"
+            app:layout_constraintEnd_toEndOf="@+id/montoEditText"
+            app:layout_constraintStart_toStartOf="@+id/montoEditText"
+            app:layout_constraintTop_toBottomOf="@+id/montoEditText" />
+
+        <TextView
+            android:id="@+id/txtTotal"
+            style="?attr/estilo_textview_total_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/textView_dialog_charge_total_margin_top"
+            android:text="Total a pagar:       "
+            app:layout_constraintEnd_toEndOf="@+id/propinaEditText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView21"
+            app:layout_constraintTop_toBottomOf="@+id/propinaEditText" />
+
+        <Button
+            android:id="@+id/cancelarButton"
+            style="?attr/estilo_botones_dialog"
+            android:layout_width="@dimen/button_dialog_charge_cancelar_aceptar_width"
+            android:layout_height="@dimen/button_dialog_charge_cancelar_aceptar_height"
+            android:layout_marginTop="@dimen/button_dialog_charge_cancelar_margin_top"
+            android:layout_marginBottom="@dimen/button_dialog_charge_cancelar_margin_bottom"
+            android:text="Cancelar"
+            android:textSize="@dimen/button_dialog_charge_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txtTotal"
+            app:layout_constraintTop_toBottomOf="@+id/txtTotal"
+            app:layout_constraintVertical_bias="0.666" />
+
+        <Button
+            android:id="@+id/dialogButton"
+            style="?attr/estilo_botones_dialog"
+            android:layout_width="@dimen/button_dialog_charge_cancelar_aceptar_width"
+            android:layout_height="@dimen/button_dialog_charge_cancelar_aceptar_height"
+            android:layout_marginStart="@dimen/button_dialog_charge_aceptar_margin_start"
+            android:text="Aceptar"
+            android:textSize="@dimen/button_dialog_charge_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/cancelarButton"
+            app:layout_constraintEnd_toEndOf="@+id/propinaEditText"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/cancelarButton"
+            app:layout_constraintTop_toTopOf="@+id/cancelarButton"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/numberPicker_root_layout_width"
+    android:layout_height="@dimen/numberPicker_root_layout_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/decrement"
+        android:layout_width="@dimen/numberPicker_button_increment_decrement_width"
+        android:layout_height="@dimen/numberPicker_button_increment_decrement_height"
+        android:layout_marginTop="5dp"
+        style="?attr/estilo_numberpicker_buttons"
+        android:text="—"/>
+
+    <EditText
+        android:id="@+id/display"
+        android:layout_width="@dimen/numberPicker_edit_text_width"
+        android:layout_height="@dimen/numberPicker_edit_text_height"
+        android:background="@drawable/rectangle_shape"
+        android:text="1"
+        android:textColor="@color/whiteBeer"
+        android:fontFamily="@font/gbold"
+        app:fontFamily="@font/gbold"
+        android:focusable="false"
+        android:inputType="number"
+        android:gravity="center"
+        android:textSize="@dimen/numberPicker_edit_text_size"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:imeOptions="actionDone"
+        />
+
+    <Button
+        android:id="@+id/increment"
+        style="?attr/estilo_numberpicker_buttons"
+        android:layout_width="@dimen/numberPicker_button_increment_decrement_width"
+        android:layout_height="@dimen/numberPicker_button_increment_decrement_height"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:text="+" />
+
+</LinearLayout>

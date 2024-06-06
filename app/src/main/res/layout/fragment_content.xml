@@ -1,0 +1,616 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.1"
+    android:background="?attr/fondo_negro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="?attr/fondo_negro">
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="368dp"
+                    android:background="?attr/fondo_separadores"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/imageView7"
+                    style="?attr/textview_titulos"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Pagos"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.086"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/view4"
+                    android:layout_alignParentEnd="true"
+                    android:background="?attr/fondo_separadores"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/textViewNumberPayment"
+                    style="?attr/textview_titulos_pagos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:text="No."
+                    app:layout_constraintStart_toStartOf="@+id/imageView7"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+                <TextView
+                    android:id="@+id/textViewCardNumber"
+                    style="?attr/textview_titulos_pagos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Tarjeta"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewNumberPayment"
+                    app:layout_constraintStart_toEndOf="@+id/textViewNumberPayment"
+                    app:layout_constraintTop_toTopOf="@+id/textViewNumberPayment"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textViewTip"
+                    style="?attr/textview_titulos_pagos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Propina"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewCardNumber"
+                    app:layout_constraintStart_toEndOf="@+id/textViewCardNumber"
+                    app:layout_constraintTop_toTopOf="@+id/textViewCardNumber"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textViewAmount"
+                    style="?attr/textview_titulos_pagos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:text="Cargo"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewTip"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView7"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textViewTip"
+                    app:layout_constraintTop_toTopOf="@+id/textViewTip"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewPagos"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="42dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView7"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/imageView7"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewNumberPayment"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:listitem="@layout/payment_item" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarPagos"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/recyclerViewPagos"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.26"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTip" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="?attr/fondo_negro">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="368dp"
+                    android:background="?attr/fondo_separadores"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <EditText
+                    android:id="@+id/editTextMesa"
+                    style="?attr/estilo_edittext_mesa"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="24dp"
+                    android:hint="No. Mesa"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView9"
+                    app:layout_constraintHorizontal_bias="0.494"
+                    app:layout_constraintStart_toStartOf="@+id/imageView9"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxSeparateAccount"
+                    style="?attr/estilo_checkbox_cuenta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:checked="false"
+                    android:text="Cta. Separada"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextMesa"
+                    app:layout_constraintHorizontal_bias="0.461"
+                    app:layout_constraintStart_toStartOf="@+id/editTextMesa"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextMesa" />
+
+                <Button
+                    android:id="@+id/buttonSend"
+                    style="?attr/fondo_nodialog_button"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_above="@+id/view"
+                    android:text="Enviar"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/numberPickerDiner"
+                    app:layout_constraintHorizontal_bias="0.6"
+                    app:layout_constraintStart_toStartOf="@+id/numberPickerDiner"
+                    app:layout_constraintTop_toBottomOf="@+id/numberPickerDiner"
+                    app:layout_constraintVertical_bias="0.305" />
+
+                <TextView
+                    android:id="@+id/imageView9"
+                    style="?attr/textview_titulos"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Consultar Cuenta"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.806"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.travijuu.numberpicker.library.NumberPicker
+                    android:id="@+id/numberPickerDiner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:custom_layout="@layout/number_picker_custom_layout"
+                    app:focusable="false"
+                    app:layout_constraintEnd_toEndOf="@+id/checkBoxSeparateAccount"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/checkBoxSeparateAccount"
+                    app:layout_constraintTop_toBottomOf="@+id/checkBoxSeparateAccount"
+                    app:max="99"
+                    app:min="1"
+                    app:unit="1"
+                    app:value="1" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="?attr/fondo_negro">
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="5dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="16dp"
+                    android:background="?attr/fondo_separadores"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/imageView10"
+                    style="?attr/textview_titulos"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Propina"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.028"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/buttonFivePercent"
+                    style="?attr/estilo_botones_propina"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="24dp"
+                    android:enabled="false"
+                    android:text="@string/eight_percent"
+                    app:layout_constraintStart_toStartOf="@+id/imageView10"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+                <Button
+                    android:id="@+id/buttonFifteenPercent"
+                    style="?attr/estilo_botones_propina"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="36dp"
+                    android:enabled="false"
+                    android:text="@string/thirteen_percent"
+                    app:layout_constraintStart_toStartOf="@+id/buttonFivePercent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonFivePercent" />
+
+                <Button
+                    android:id="@+id/buttonTenPercent"
+                    style="?attr/estilo_botones_propina"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:enabled="false"
+                    android:text="@string/ten_percent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView10"
+                    app:layout_constraintHorizontal_bias="0.26"
+                    app:layout_constraintStart_toEndOf="@+id/buttonFivePercent"
+                    app:layout_constraintTop_toTopOf="@+id/buttonFivePercent" />
+
+                <EditText
+                    android:id="@+id/customTipEditText"
+                    style="?attr/estilo_edittext_propina"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="8dp"
+                    android:enabled="false"
+                    android:hint="Monto"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/buttonFifteenPercent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonFifteenPercent"
+                    app:layout_constraintVertical_bias="0.52" />
+
+                <ImageButton
+                    android:id="@+id/buttonCustomPesosTip"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="?attr/icon_peso"
+                    android:enabled="false"
+                    app:layout_constraintBottom_toBottomOf="@+id/customTipEditText"
+                    app:layout_constraintStart_toEndOf="@+id/customTipEditText"
+                    app:layout_constraintTop_toTopOf="@+id/customTipEditText"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageButton
+                    android:id="@+id/buttonCustomPercentTip"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="?attr/icon_porcentaje"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttonCustomPesosTip"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.107"
+                    app:layout_constraintStart_toEndOf="@+id/buttonCustomPesosTip"
+                    app:layout_constraintTop_toTopOf="@+id/buttonCustomPesosTip"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/buttonTwentyPercent"
+                    style="?attr/estilo_botones_propina"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:enabled="false"
+                    android:text="@string/fifteen_percent"
+                    app:layout_constraintEnd_toEndOf="@+id/buttonTenPercent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/buttonFifteenPercent"
+                    app:layout_constraintTop_toTopOf="@+id/buttonFifteenPercent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="?attr/fondo_negro">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewDiscounts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:padding="3dp"
+                    android:scrollbars="vertical"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView12"
+                    app:layout_constraintHorizontal_bias="0.7"
+                    app:layout_constraintStart_toStartOf="@+id/imageView12"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView12"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:listitem="@layout/card_item" />
+
+                <TextView
+                    android:id="@+id/imageView12"
+                    style="?attr/textview_titulos"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Descuentos"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.873"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarDescuentos"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminateTint="@color/doradoBeer"
+                    android:indeterminateTintMode="src_atop"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.744"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView12"
+                    app:layout_constraintVertical_bias="0.438" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="370dp"
+        android:layout_height="370dp"
+        android:layout_centerInParent="true"
+        android:background="?attr/circulo_central"
+        android:paddingLeft="85dp"
+        android:paddingTop="20dp"
+        android:paddingRight="85dp"
+        android:paddingBottom="80dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/imageView11"
+                style="?attr/textview_titulos"
+                android:layout_width="206dp"
+                android:layout_height="57dp"
+                android:text="Cobrar" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewFolio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/gbook"
+                    android:text="Folio: "
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/whiteBeer"
+                    app:fontFamily="@font/gbook" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewComensal"
+                    style="?attr/textview_subtitulos"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="  Subtotal" />
+
+                <TextView
+                    android:id="@+id/textViewImporte"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/gbook"
+                    android:text="0.00"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/whiteBeer"
+                    android:textSize="28dp"
+                    app:fontFamily="@font/gbook" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewNumeroComensal"
+                    style="?attr/textview_subtitulos"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="  Descuento" />
+
+                <TextView
+                    android:id="@+id/textViewMontoDescuento"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gbook"
+                    android:text="0.00"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/whiteBeer"
+                    android:textSize="28dp"
+                    app:fontFamily="@font/gbook" />
+
+                <ImageButton
+                    android:id="@+id/buttonNoDiscount"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="2dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:enabled="false"
+                    android:scaleType="fitXY"
+                    android:src="?attr/icon_delete"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="?attr/textview_subtitulos"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="  Propina" />
+
+                <TextView
+                    android:id="@+id/textViewMontoPropina"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gbook"
+                    android:text="0.00"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/whiteBeer"
+                    android:textSize="28sp"
+                    app:fontFamily="@font/gbook" />
+
+                <ImageButton
+                    android:id="@+id/buttonNoTip"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="2dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:enabled="false"
+                    android:scaleType="fitXY"
+                    android:src="?attr/icon_delete"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="?attr/textview_subtitulos"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="  Total" />
+
+                <TextView
+                    android:id="@+id/textViewMontoTotal"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gbook"
+                    android:text="0.00"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/whiteBeer"
+                    android:textSize="28dp"
+                    app:fontFamily="@font/gbook" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/buttonCobrar"
+                style="?attr/estilo_boton_porcobrar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="2"
+                android:enabled="true"
+                android:text="Por Cobrar $0.00" />
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context="com.innovacion.eks.beerws.com.View.ActividadPrincipal"
+    android:background="?attr/fondo_negro">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contenedorLinearLayout">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="2dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:background="?attr/fondo_negro"
+                android:id="@+id/barraLateralConstraint">
+                <!-- Your other child views -->
+
+                <ImageButton
+                    android:id="@+id/imageBtnPayclub"
+                    android:layout_width="@dimen/imageButton_reset_keys_width"
+                    android:layout_height="@dimen/imageButton_reset_keys_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/imageButton_all_margin_top"
+                    android:background="@android:color/transparent"
+                    android:onClick="settingsButtonAction"
+                    android:src="?attr/icon_acomer"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewReimprimir" />
+
+                <TextView
+                    android:id="@+id/textViewPayclub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textView_descriptivos_margin_top"
+                    android:text="A Comer"
+                    style="?attr/textview_menu_lateral"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textView_descriptivos_text_size"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+                    app:layout_constraintStart_toStartOf="@+id/imageButton3"
+                    app:layout_constraintTop_toBottomOf="@+id/imageBtnPayclub" />
+
+
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="@dimen/imageButton_reset_keys_width"
+                    android:layout_height="@dimen/imageButton_reset_keys_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="settingsButtonAction"
+                    android:src="?attr/icon_settings_login"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageBtnPayclub" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textView_descriptivos_margin_top"
+                    android:text="Ajustes"
+                    style="?attr/textview_menu_lateral"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textView_descriptivos_text_size"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+                    app:layout_constraintStart_toStartOf="@+id/imageButton3"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="@dimen/imageButton_reset_keys_width"
+                    android:layout_height="@dimen/imageButton_reset_keys_height"
+                    android:layout_marginTop="@dimen/imageButton_all_margin_top"
+                    android:background="@android:color/transparent"
+                    android:onClick="exitButtonAction"
+                    android:src="?attr/icon_salir"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    style="?attr/textview_menu_lateral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textView_descriptivos_margin_top"
+                    android:text="Salir"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textView_descriptivos_text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonReimprimir"
+                    android:layout_width="@dimen/imageButton_reset_keys_width"
+                    android:layout_height="@dimen/imageButton_reset_keys_height"
+                    android:layout_marginTop="@dimen/imageButton_all_margin_top"
+                    android:background="@android:color/transparent"
+                    android:onClick="settingsButtonAction"
+                    android:src="?attr/icon_reimprimir"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.51"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewIdentificarMiembro" />
+
+                <TextView
+                    android:id="@+id/textViewReimprimir"
+                    style="?attr/textview_menu_lateral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textView_descriptivos_margin_top"
+                    android:text="Historico de \n Pagos"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textView_descriptivos_text_size"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButtonReimprimir"
+                    app:layout_constraintHorizontal_bias="0.37"
+                    app:layout_constraintStart_toStartOf="@+id/imageButtonReimprimir"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButtonReimprimir" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonIdentificarMiembro"
+                    android:layout_width="@dimen/imageButton_reset_keys_width"
+                    android:layout_height="@dimen/imageButton_reset_keys_height"
+                    android:layout_marginTop="@dimen/imageButton_all_margin_top"
+                    android:background="@android:color/transparent"
+                    android:src="?attr/icon_identificar_miembro"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonResetKeys"
+                    android:layout_width="@dimen/imageButton_reset_keys_width"
+                    android:layout_height="@dimen/imageButton_reset_keys_width"
+                    android:layout_marginTop="@dimen/imageButton_reset_keys_margin_top"
+                    android:background="@android:color/transparent"
+                    android:src="?attr/icon_reset_keys"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textView_descriptivos_margin_top"
+                    android:text="Inicializar \n llaves"
+                    style="?attr/textview_menu_lateral"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textView_descriptivos_text_size"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButtonResetKeys"
+                    app:layout_constraintHorizontal_bias="0.454"
+                    app:layout_constraintStart_toStartOf="@+id/imageButtonResetKeys"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButtonResetKeys" />
+
+                <TextView
+                    android:id="@+id/textViewIdentificarMiembro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textView_descriptivos_margin_top"
+                    android:text="Identificar \n miembro"
+                    style="?attr/textview_menu_lateral"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textView_descriptivos_text_size"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButtonIdentificarMiembro"
+                    app:layout_constraintStart_toStartOf="@+id/imageButtonIdentificarMiembro"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButtonIdentificarMiembro" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+
+        <View
+            android:id="@+id/viewPrincipal"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="?attr/fondo_separadores" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            android:id="@+id/fragment_container">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

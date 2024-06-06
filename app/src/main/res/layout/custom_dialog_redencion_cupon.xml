@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:background="?attr/fondo_dialogs"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?attr/estilo_textview_dialog_title"
+        android:layout_marginTop="20dp"
+        android:text="Buen Fin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRedimirPuntos"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="20dp"
+        android:stateListAnimator="@null"
+        android:text="Aceptar"
+        style="?attr/estilo_botones_dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMessage"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonCancelar"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMessage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBarAfiliado"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRedimirPuntos"
+        app:layout_constraintEnd_toEndOf="@+id/btnRedimirPuntos"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/btnRedimirPuntos"
+        app:layout_constraintTop_toTopOf="@+id/btnRedimirPuntos"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <Button
+        android:id="@+id/buttonCancelar"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        style="?attr/estilo_botones_dialog"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRedimirPuntos"
+        app:layout_constraintStart_toStartOf="@+id/textViewMessage"
+        app:layout_constraintTop_toTopOf="@+id/btnRedimirPuntos"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:text="Tiene un cupon de 150 puntos \n ¿Desea Aplicarlo?"
+        style="?attr/estilo_textview_dialog_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

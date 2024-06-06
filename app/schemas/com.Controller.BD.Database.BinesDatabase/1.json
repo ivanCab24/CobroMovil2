@@ -1,0 +1,168 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "1ef2045b7bbd4981363a661e903c47ec",
+    "entities": [
+      {
+        "tableName": "MBCO2",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `TC_PREFIJO` INTEGER NOT NULL, `TIPO_FPGO` INTEGER NOT NULL, `SA_IDFPGO` INTEGER NOT NULL, `TR_IDFPGO` TEXT, `TC_DEBITO` TEXT, `FACTIVO` INTEGER NOT NULL, `TC_TIPOCOM` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "TC_PREFIJO",
+            "columnName": "TC_PREFIJO",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "TIPO_FPGO",
+            "columnName": "TIPO_FPGO",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "SA_IDFPGO",
+            "columnName": "SA_IDFPGO",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "TR_IDFPGO",
+            "columnName": "TR_IDFPGO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "TC_DEBITO",
+            "columnName": "TC_DEBITO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FACTIVO",
+            "columnName": "FACTIVO",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "TC_TIPOCOM",
+            "columnName": "TC_TIPOCOM",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "MFPGO",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `TIPO_FPGO` TEXT, `ID_FPGO` TEXT, `FORMA_PAGO` TEXT, `DESCRIPCION` TEXT, `CLAVE` TEXT, `FPROPINA` TEXT, `FREFERENCIA` TEXT, `FBANCO` TEXT, `COMISION` TEXT, `TIPO_COMISION` TEXT, `FORMA_PAGO_SAT` TEXT, `FORMA_PAGO_SAT2` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "TIPO_FPGO",
+            "columnName": "TIPO_FPGO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ID_FPGO",
+            "columnName": "ID_FPGO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FORMA_PAGO",
+            "columnName": "FORMA_PAGO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "DESCRIPCION",
+            "columnName": "DESCRIPCION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "CLAVE",
+            "columnName": "CLAVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FPROPINA",
+            "columnName": "FPROPINA",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FREFERENCIA",
+            "columnName": "FREFERENCIA",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FBANCO",
+            "columnName": "FBANCO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "COMISION",
+            "columnName": "COMISION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "TIPO_COMISION",
+            "columnName": "TIPO_COMISION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FORMA_PAGO_SAT",
+            "columnName": "FORMA_PAGO_SAT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FORMA_PAGO_SAT2",
+            "columnName": "FORMA_PAGO_SAT2",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '1ef2045b7bbd4981363a661e903c47ec')"
+    ]
+  }
+}

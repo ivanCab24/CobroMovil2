@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:background="?attr/fondo_dialogs"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/cancelarButton"
+        style="?attr/estilo_botones_dialog"
+        android:layout_width="@dimen/button_dialog_formas_pago_cancelar_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="@dimen/button_dialog_formas_pago_cancelar_margin_bottom"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cuponesAplicados"
+        app:layout_constraintStart_toStartOf="@+id/cuponesAplicados"
+        app:layout_constraintTop_toBottomOf="@+id/cuponesLay" />
+
+    <Button
+        android:id="@+id/enviarButton"
+        style="?attr/estilo_botones_dialog"
+        android:layout_width="@dimen/button_dialog_formas_pago_cancelar_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="@dimen/button_dialog_formas_pago_cancelar_margin_bottom"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/cuenta"
+        app:layout_constraintStart_toStartOf="@id/cuenta"
+        app:layout_constraintTop_toBottomOf="@+id/cuponesLay" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cuponesLay"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp">
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            style="?attr/estilo_textview_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Descuentos"
+            app:layout_constraintEnd_toEndOf="@+id/recyclerViewDescuentos"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="@+id/recyclerViewDescuentos"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewDescuentos"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/recyclerView_dialog_formas_pago_height"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="@dimen/recyclerView_dialog_formas_pago_margin_top"
+            android:layout_marginEnd="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialogTitle"
+            tools:listitem="@layout/metodo_de_pago_item" />
+
+        <TextView
+            android:id="@+id/dialogTitle2"
+            style="?attr/estilo_textview_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="13dp"
+            android:text="Cupones"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerViewCupones"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerViewDescuentos" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCupones"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/recyclerView_dialog_formas_pago_height"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="@dimen/recyclerView_dialog_formas_pago_margin_top"
+            android:layout_marginEnd="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialogTitle2"
+            tools:listitem="@layout/metodo_de_pago_item" />
+
+        <TextView
+            android:id="@+id/messageDescuentos"
+            style="?attr/estilo_textview_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No cuentas con descuentos"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/recyclerViewDescuentos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialogTitle" />
+
+        <TextView
+            android:id="@+id/messageCupones"
+            style="?attr/estilo_textview_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No cuentas con cupones"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/recyclerViewCupones"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialogTitle2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cuponesAplicados"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toStartOf="@id/cuenta"
+        app:layout_constraintStart_toEndOf="@+id/cuponesLay"
+        app:layout_constraintTop_toBottomOf="@+id/textView16">
+
+        <TextView
+            android:id="@+id/dialogTitle3"
+            style="?attr/estilo_textview_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="16dp"
+
+            android:text="Aplicados"
+
+            app:layout_constraintBottom_toTopOf="@+id/recyclerViewAplicados"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewAplicados"
+            android:layout_width="220dp"
+            android:layout_height="@dimen/recyclerView_dialog_formas_pago_height"
+            android:layout_marginTop="13dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialogTitle3"
+            tools:listitem="@layout/metodo_de_pago_item" />
+
+        <TextView
+            android:id="@+id/messageSeleccion"
+            style="?attr/estilo_textview_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona un cupón o un descuento"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/recyclerViewAplicados"
+            app:layout_constraintEnd_toEndOf="@+id/recyclerViewAplicados"
+            app:layout_constraintStart_toStartOf="@+id/recyclerViewAplicados"
+            app:layout_constraintTop_toBottomOf="@+id/dialogTitle3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cuenta"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cuponesAplicados"
+        app:layout_constraintTop_toBottomOf="@+id/textView16">
+
+        <TextView
+            android:id="@+id/dialogTitle4"
+            style="?attr/estilo_textview_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="0dp"
+            android:text="Cuenta"
+            app:layout_constraintEnd_toEndOf="@id/cuenta"
+            app:layout_constraintStart_toStartOf="@+id/cuenta"
+            app:layout_constraintTop_toTopOf="@id/cuenta" />
+
+        <ScrollView
+            android:id="@+id/scrollCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="320dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="0dp"
+            app:layout_constraintEnd_toEndOf="@id/cuenta"
+            app:layout_constraintStart_toStartOf="@id/cuenta"
+            app:layout_constraintTop_toBottomOf="@id/dialogTitle4">
+
+            <TextView
+                android:id="@+id/detalleCuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:layout_marginStart="00dp"
+                android:layout_marginTop="0dp"
+
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="Detalle de cuenta"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+
+                app:layout_constraintEnd_toEndOf="@id/scrollCuenta"
+                app:layout_constraintStart_toStartOf="@+id/scrollCuenta"
+                app:layout_constraintTop_toTopOf="@id/scrollCuenta" />
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/totalCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total:"
+        style="?attr/estilo_textview_dialog_title"
+        app:layout_constraintBottom_toTopOf="@+id/enviarButton"
+        app:layout_constraintEnd_toEndOf="@+id/cuenta"
+        app:layout_constraintStart_toStartOf="@+id/cuenta"
+        app:layout_constraintTop_toBottomOf="@+id/cuenta" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        style="?attr/estilo_textview_dialog_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

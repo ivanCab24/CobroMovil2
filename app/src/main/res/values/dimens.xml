@@ -1,0 +1,325 @@
+<resources>
+
+    <!--Inicia Dimens para LoginActivity-->
+    <dimen name="logo_height">180dp</dimen>
+    <dimen name="margin_top_logo">104dp</dimen>
+    <dimen name="button_login_width">235dp</dimen>
+    <dimen name="button_login_height">55dp</dimen>
+    <dimen name="editText_user_width">330dp</dimen>
+    <dimen name="editText_user_margin_top">36dp</dimen>
+    <dimen name="editText_password_width">330dp</dimen>
+    <dimen name="editText_password_margin_top">68dp</dimen>
+    <dimen name="imageButton_settings_width">80dp</dimen>
+    <dimen name="imageButton_settings_height">80dp</dimen>
+    <dimen name="imageButton_subir_archivos_height">75dp</dimen>
+    <dimen name="imageButton_subir_archivos_width">75dp</dimen>
+    <dimen name="imageButton_settings_margin_end">36dp</dimen>
+    <dimen name="tv_ajustes_text_size">26sp</dimen>
+    <dimen name="imageButton__subir_archivos_margin_start">36dp</dimen>
+    <dimen name="tv_subir_text_size">26sp</dimen>
+    <dimen name="editText_text_size">28sp</dimen>
+    <dimen name="padding_edit_text_login_left">50dp</dimen>
+    <dimen name="padding_edit_text_login_top">22dp</dimen>
+    <dimen name="padding_edit_text_login_right">50dp</dimen>
+    <dimen name="padding_edit_text_login_bottom">16dp</dimen>
+    <dimen name="button_text_size_no_dialog">27sp</dimen>
+    <!--Termina Dimens para LoginActivity-->
+
+    <!--Inicia Dimens para DialogSettings-->
+
+    <dimen name="editText_settings_size">26sp</dimen>
+    <dimen name="button_text_settings_size">25sp</dimen>
+
+    <!--Inicia Dimens para DialogSeleccionMarca-->
+    <dimen name="imageButton_seleccion_marca_widht">185dp</dimen>
+    <dimen name="imageButton_seleccion_marca_height">185dp</dimen>
+
+    <!--Inicia Dimens para ItemPrinter-->
+    <dimen name="imageView_printer_height">60dp</dimen>
+    <dimen name="imageView_printer_width">60dp</dimen>
+    <dimen name="tv_margin_top_bt_address">20dp</dimen>
+    <dimen name="tv_text_size_bt_address">18sp</dimen>
+    <dimen name="tv_text_size_bt_name">24sp</dimen>
+
+    <!--Inicia Dimens para ActivityPinpad285-->
+    <dimen name="imageButton_activity_pinpad_e285_width">65dp</dimen>
+    <dimen name="imageButton_activity_pinpad_e285_height">65dp</dimen>
+
+    <!--Inicia Dimens para ActividadPrincipal-->
+    <dimen name="imageButton_reset_keys_height">76dp</dimen>
+    <dimen name="imageButton_reset_keys_width">76dp</dimen>
+    <dimen name="imageButton_reset_keys_margin_top">64dp</dimen>
+    <dimen name="imageButton_all_margin_top">24dp</dimen>
+    <dimen name="textView_descriptivos_text_size">14sp</dimen>
+    <dimen name="textView_descriptivos_margin_top">8dp</dimen>
+
+    <!--Inicia Dimens para ContentFragment-->
+    <dimen name="textView_titulos_width">340dp</dimen>
+    <dimen name="textView_text_size_titulos">34sp</dimen>
+
+    <dimen name="view_barras_margin_top">368dp</dimen>
+
+    <dimen name="textView_titulos_pagos_text_size">18sp</dimen>
+    <dimen name="textView_datos_pagos_text_size">16sp</dimen>
+
+    <dimen name="textView_numero_pago_width">25dp</dimen>
+    <dimen name="textView_numero_pago_margin_start">16dp</dimen>
+    <dimen name="textView_numero_pago_margin_top">16dp</dimen>
+
+    <dimen name="textView_card_number_width">65dp</dimen>
+    <dimen name="textView_card_number_margin_start">12dp</dimen>
+    <dimen name="textView_card_number_margin_top">4dp</dimen>
+    <dimen name="textView_card_number_margin_bottom">4dp</dimen>
+
+    <dimen name="textView_monto_propina_width">80dp</dimen>
+    <dimen name="textView_monto_propina_margin_start">14dp</dimen>
+
+    <dimen name="textView_monto_cobrado_width">80dp</dimen>
+    <dimen name="textView_monto_cobrado_margin_start">6dp</dimen>
+
+    <dimen name="imageButton_delete_pago_width">30dp</dimen>
+    <dimen name="imageButton_delete_pago_height">30dp</dimen>
+    <dimen name="imageButton_delete_pago_margin_top">8dp</dimen>
+    <dimen name="imageButton_delete_pago_margin_end">8dp</dimen>
+    <dimen name="imageButton_delete_pago_margin_bottom">8dp</dimen>
+
+    <dimen name="editText_normal_radius">15dip</dimen>
+    <dimen name="editText_focus_padding">10dp</dimen>
+    <dimen name="editText_focus_stroke">6dp</dimen>
+    <dimen name="editText_focus_bottom_left_redius">10dp</dimen>
+    <dimen name="editText_focus_bottom_right_redius">10dp</dimen>
+    <dimen name="editText_focus_top_left_redius">10dp</dimen>
+    <dimen name="editText_focus_top_right_redius">10dp</dimen>
+
+    <dimen name="editText_mesa_widht">170dp</dimen>
+    <dimen name="editText_mesa_height">50dp</dimen>
+    <dimen name="editText_mesa_margin_top">24dp</dimen>
+    <dimen name="editText_mesa_padding">15dp</dimen>
+    <dimen name="editText_mesa_text_size">26sp</dimen>
+
+    <dimen name="checkBox_cuenta_separada_text_size">22sp</dimen>
+    <dimen name="checkBox_cuenta_separada_height">50dp</dimen>
+    <dimen name="checkBox_cuenta_separada_margin_top">20dp</dimen>
+
+    <dimen name="numberPicker_root_layout_width">180dp</dimen>
+    <dimen name="numberPicker_root_layout_height">65dp</dimen>
+    <dimen name="numberPicker_button_increment_decrement_height">55dp</dimen>
+    <dimen name="numberPicker_button_increment_decrement_width">55dp</dimen>
+    <dimen name="numberPicker_edit_text_width">55dp</dimen>
+    <dimen name="numberPicker_edit_text_height">55dp</dimen>
+    <dimen name="numberPicker_edit_text_size">25sp</dimen>
+    <dimen name="numberPicker_button_text_size">25sp</dimen>
+    <dimen name="numberPicker_comensal_margin_top">20dp</dimen>
+
+    <dimen name="button_consultar_mesa_width">170dp</dimen>
+    <dimen name="button_consultar_mesa_height">50dp</dimen>
+    <dimen name="button_consultar_mesa_text_size">22sp</dimen>
+
+    <dimen name="circulo_central_widht">500dp</dimen>
+    <dimen name="circulo_central_height">500dp</dimen>
+    <dimen name="circulo_central_padding_left_right">85dp</dimen>
+    <dimen name="circulo_central_padding_top">20dp</dimen>
+    <dimen name="circulo_central_padding_bottom">80dp</dimen>
+
+    <dimen name="textView_circulo_central_cobrar_widht">206dp</dimen>
+    <dimen name="textView_circulo_central_cobrar_height">57dp</dimen>
+    <dimen name="textView_circulo_central_subtitulos_width">180dp</dimen>
+    <dimen name="textView_circulo_central_subtitulos_complementos_width">120dp</dimen>
+    <dimen name="textView_circulo_central_subtitulos_text_size">26sp</dimen>
+    <dimen name="textView_circulo_central_subtitulos_complementos_text_size">28sp</dimen>
+
+    <dimen name="imageButton_circulo_central_no_discount_width">27dp</dimen>
+    <dimen name="imageButton_circulo_central_no_discount_height">27dp</dimen>
+
+    <dimen name="button_circulo_central_por_cobrar_text_size">27sp</dimen>
+
+    <dimen name="imageButton_tip_width">80dp</dimen>
+    <dimen name="imageButton_tip_height">80dp</dimen>
+    <dimen name="imageButton_tip_margin_start">60dp</dimen>
+    <dimen name="imageButton_tip_margin_top">24dp</dimen>
+    <dimen name="imageButton_tip_margin_top_2">36dp</dimen>
+    <dimen name="imageButton_tip_text_size">30sp</dimen>
+
+    <dimen name="editText_tip_width">170dp</dimen>
+    <dimen name="editText_tip_height">50dp</dimen>
+    <dimen name="editText_tip_margin_bottom">8dp</dimen>
+    <dimen name="editText_tip_text_size">20sp</dimen>
+
+    <dimen name="imageButton_tip_custom_width">50dp</dimen>
+    <dimen name="imageButton_tip_custom_height">50dp</dimen>
+    <dimen name="imageButton_tip_custom_margin_start">24dp</dimen>
+    <dimen name="imageButton_tip_custom_margin_bottom">8dp</dimen>
+
+    <dimen name="cardView_descuentos_width">300dp</dimen>
+    <dimen name="cardView_descuentos_height">100dp</dimen>
+    <dimen name="cardView_descuentos_corener_radius">8dp</dimen>
+    <dimen name="cardView_descuentos_elevation">4dp</dimen>
+    <dimen name="cardView_descuentos_nombre_porcentaje_text_size">16sp</dimen>
+    <dimen name="cardView_descuentos_descripcion_text_size">14sp</dimen>
+
+    <!--Inicia Dimens para QuestionDialog-->
+    <dimen name="button_question_dialog_cancelar_aceptar_width">220dp</dimen>
+    <dimen name="button_question_dialog_cancelar_margin_start">44dp</dimen>
+    <dimen name="button_question_dialog_cancelar_margin_top">48dp</dimen>
+    <dimen name="button_question_dialog_cancelar_margin_bottom">20dp</dimen>
+    <dimen name="button_question_dialog_text_size">30sp</dimen>
+    <dimen name="textView_dialog_message_text_size">30sp</dimen>
+    <dimen name="textView_question_dialog_message_margin_top">40dp</dimen>
+    <dimen name="textView_dialog_titulo_text_size">32sp</dimen>
+
+    <!--Inicia Dimens para AcomerDialog-->
+    <dimen name="button_acomer_dialog_cancelar_identificar_width">220dp</dimen>
+    <dimen name="button_acomer_dialog_cancelar_identificar_margin_end">16dp</dimen>
+    <dimen name="button_acomer_dialog_cancelar_identificar_margin_top">32dp</dimen>
+    <dimen name="button_acomer_dialog_cancelar_identificar_margin_bottom">16dp</dimen>
+    <dimen name="button_acomer_dialog_cancelar_identificar_margin_start">16dp</dimen>
+
+    <dimen name="editText_acomer_dialog_height">50dp</dimen>
+    <dimen name="editText_acomer_dialog_margin_start">16dp</dimen>
+    <dimen name="editText_acomer_dialog_margin_top">32dp</dimen>
+    <dimen name="editText_acomer_dialog_margin_end">16dp</dimen>
+    <dimen name="editText_acomer_dialog_padding_start">8dp</dimen>
+    <dimen name="editText_acomer_dialog_padding_end">8dp</dimen>
+
+    <dimen name="imageBUtton_acomer_dialog_escanear_width">50dp</dimen>
+    <dimen name="imageBUtton_acomer_dialog_escanear_height">50dp</dimen>
+    <dimen name="imageBUtton_acomer_dialog_escanear_margin_end">16dp</dimen>
+
+    <dimen name="editText_dialog_text_size">26sp</dimen>
+
+    <!--Inicia Dimens para RedencionPuntos-->
+    <dimen name="editText_dialog_redencion_puntos_height">60dp</dimen>
+    <dimen name="editText_dialog_redencion_puntos_margin_top">32dp</dimen>
+
+    <dimen name="button_dialog_redencion_cancelar_redimir_width">220dp</dimen>
+    <dimen name="button_dialog_redencion_cancelar_redimir_margin_end">16dp</dimen>
+
+    <dimen name="textView_dialog_redencion_message_margin_top">24dp</dimen>
+
+    <dimen name="button_dialog_redencion_margin_start">32dp</dimen>
+    <dimen name="button_dialog_redencion_margin_top">32dp</dimen>
+    <dimen name="button_dialog_redencion_margin_bottom">16dp</dimen>
+
+    <!--Inicia Dimens para DialogCharge-->
+    <dimen name="editText_dialog_charge_monto_propina_width">280dp</dimen>
+    <dimen name="editText_dialog_charge_monto_propina_height">45dp</dimen>
+
+    <!--Dialog del correo-->
+    <dimen name="editText_correo_width">380dp</dimen>
+    <dimen name="editText_dialog_correo_height">65dp</dimen>
+
+    <dimen name="button_dialog_charge_cancelar_aceptar_width">200dp</dimen>
+    <dimen name="button_dialog_charge_cancelar_aceptar_height">45dp</dimen>
+    <dimen name="button_dialog_charge_text_size">25sp</dimen>
+
+    <dimen name="textView_dialog_charge_text_size">28sp</dimen>
+    <dimen name="textView_dialog_charge_total_text_size">26sp</dimen>
+
+    <dimen name="textView_dialog_charge_title_margin_top">8dp</dimen>
+    <dimen name="textView_dialog_charge_message_margin_top">12dp</dimen>
+    <dimen name="textView_dialog_charge_monto_margin_top">16dp</dimen>
+    <dimen name="textView_dialog_charge_monto_margin_start">16dp</dimen>
+    <dimen name="textView_dialog_charge_propina_margin_top">24dp</dimen>
+    <dimen name="editText_dialog_charge_propina_margin_top">16dp</dimen>
+    <dimen name="editText_dialog_charge_monto_margin_end">16dp</dimen>
+    <dimen name="textView_dialog_charge_total_margin_top">20dp</dimen>
+    <dimen name="button_dialog_charge_cancelar_margin_top">16dp</dimen>
+    <dimen name="button_dialog_charge_cancelar_margin_bottom">16dp</dimen>
+    <dimen name="button_dialog_charge_aceptar_margin_start">24dp</dimen>
+
+    <!--Inicia Dimens para DialogFormasDePago-->
+
+    <dimen name="textView_dialog_formas_pago_message_text_size">30sp</dimen>
+
+    <dimen name="recyclerView_dialog_formas_pago_height">250dp</dimen>
+
+    <dimen name="button_dialog_formas_pago_cancelar_width">250dp</dimen>
+
+    <dimen name="textView_dialog_formas_pago_margin_top">16dp</dimen>
+    <dimen name="textView_dialog_formas_pago_margin_start">16dp</dimen>
+    <dimen name="textView_dialog_formas_pago_margin_end">16dp</dimen>
+
+    <dimen name="recyclerView_dialog_formas_pago_margin_top">20dp</dimen>
+    <dimen name="recyclerView_dialog_formas_pago_margin_start">16dp</dimen>
+    <dimen name="recyclerView_dialog_formas_pago_margin_end">16dp</dimen>
+
+    <dimen name="button_dialog_formas_pago_cancelar_margin_top">16dp</dimen>
+    <dimen name="button_dialog_formas_pago_cancelar_margin_bottom">16dp</dimen>
+
+    <!--Inicia Dimens para ItemFormasDePago-->
+
+    <dimen name="constraintLayout_item_formas_pago_height">80dp</dimen>
+
+    <dimen name="imageView_item_formas_pago_width">50dp</dimen>
+    <dimen name="imageView_item_formas_pago_height">50dp</dimen>
+
+    <dimen name="cardView_item_formas_pago_margin_bottom">15dp</dimen>
+
+    <dimen name="imageView_item_formas_pago_margin_start">16dp</dimen>
+    <dimen name="imageView_item_formas_pago_margin_top">16dp</dimen>
+    <dimen name="imageView_item_formas_pago_margin_bottom">16dp</dimen>
+
+    <dimen name="textView_item_formas_pago_margin_top">24dp</dimen>
+    <dimen name="textView_item_formas_pago_margin_start">24dp</dimen>
+
+    <!--Inicia Dimens para DialogInput-->
+
+    <dimen name="button_dialog_input_cancelar_aceptar_width">200dp</dimen>
+
+    <dimen name="button_dialog_input_aceptar_margin_start">16dp</dimen>
+
+    <dimen name="button_dialog_input_cancelar_margin_start">20dp</dimen>
+    <dimen name="button_dialog_input_cancelar_margin_top">40dp</dimen>
+    <dimen name="button_dialog_input_cancelar_margin_bottom">16dp</dimen>
+
+    <!--Inicia Dimens para DialogWaiting-->
+
+    <dimen name="textView_dialog_waiting_message_text_size">30sp</dimen>
+
+    <!--Inicia Dimens para FragmentHistoricoPagos-->
+
+    <dimen name="view_fragment_historico_margin_top">100dp</dimen>
+
+    <dimen name="imageButton_fragment_historico_width">75dp</dimen>
+    <dimen name="imageButton_fragment_historico_height">75dp</dimen>
+
+    <dimen name="textView_fragment_historico_filtrar_por_text_size">22sp</dimen>
+
+    <dimen name="radioButton_fragment_historico_text_size">22sp</dimen>
+
+    <dimen name="editText_fragment_historico_estafeta_token_width">350dp</dimen>
+
+    <dimen name="button_fragment_historico_continuar_aceptar_height">60dp</dimen>
+
+    <dimen name="editText_fragment_historico_estafeta_token_margin_top">70dp</dimen>
+
+    <!--Inicia Dimens para DialogMultipleDescuentos-->
+
+    <dimen name="imageButton_dialog_multiple_aceptar_cancelar_width">40dp</dimen>
+    <dimen name="imageButton_dialog_multiple_aceptar_cancelar_height">40dp</dimen>
+
+    <dimen name="textView_dialog_multiple_title_margin_top">44dp</dimen>
+
+    <dimen name="recyclerView_dialog_multiple_height">350dp</dimen>
+
+    <!--Inicia Dimens para ComensalItem-->
+
+    <dimen name="textView_comensal_item_text_size">20sp</dimen>
+
+    <!--Inicia Dimens para DialogDiscountList-->
+
+    <dimen name="imageButton_dialog_discounts_cancelar_width">26dp</dimen>
+    <dimen name="imageButton_dialog_discounts_cancelar_height">26dp</dimen>
+
+    <dimen name="textView_dialog_discounts_text_size">16sp</dimen>
+
+    <dimen name="imageButton_dialog_mercado_pago_cerrar_width">35dp</dimen>
+    <dimen name="imageButton_dialog_mercado_pago_cerrar_height">35dp</dimen>
+    ,
+    <dimen name="imaView_dialog_mercado_pago_qr_width">500dp</dimen>
+    <dimen name="imaView_dialog_mercado_pago_qr_height">650dp</dimen>
+
+    <!--Dimensiones de las lista de impresoras-->
+    <dimen name="High_altura_list">150dp</dimen>
+
+</resources>

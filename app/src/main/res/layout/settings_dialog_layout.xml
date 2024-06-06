@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="600dp"
+        android:layout_height="530dp"
+        android:background="?attr/fondo_dialogs"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            style="?attr/estilo_textview_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Configuración"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/IPEditText"
+            style="?attr/estilo_edittext_settings"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:drawableStart="?attr/icon_ip"
+            android:hint="IP del Servidor"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialogTitle" />
+
+        <EditText
+            android:id="@+id/IPPindpad"
+            style="?attr/estilo_edittext_settings"
+            android:layout_width="380dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="?attr/icon_ip"
+            android:hint="Pinpad"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:enabled="false"
+            app:layout_constraintStart_toStartOf="@+id/IPEditText"
+            app:layout_constraintTop_toBottomOf="@+id/IPEditText" />
+
+        <Button
+            android:id="@+id/btnBuscarPinpad"
+            style="?attr/estilo_botones_settings"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:text="Buscar"
+            app:layout_constraintEnd_toEndOf="@+id/IPEditText"
+            app:layout_constraintHorizontal_bias="0.958"
+            app:layout_constraintStart_toEndOf="@+id/IPPindpad"
+            app:layout_constraintTop_toTopOf="@+id/IPPindpad" />
+
+
+        <EditText
+            android:id="@+id/numeroTerminal"
+            style="?attr/estilo_edittext_settings"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:drawableStart="?attr/icon_pinpad"
+            android:hint="Numero de Terminal"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            app:layout_constraintEnd_toEndOf="@+id/btnBuscarPinpad"
+            app:layout_constraintStart_toStartOf="@+id/IPPindpad"
+            app:layout_constraintTop_toBottomOf="@+id/IPPindpad" />
+
+        <EditText
+            android:id="@+id/editTextTextCajaMP"
+            style="?attr/estilo_edittext_settings"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="?attr/icon_mp_mini"
+            android:hint="Caja de MercadoPago"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/numeroTerminal"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/numeroTerminal"
+            app:layout_constraintTop_toBottomOf="@+id/numeroTerminal" />
+
+        <EditText
+            android:id="@+id/unidadEditText"
+            style="?attr/estilo_edittext_settings"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:drawableStart="?attr/icon_unidad"
+            android:hint="Numero de Unidad"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/numeroTerminal"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextCajaMP"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextCajaMP" />
+
+        <EditText
+            android:id="@+id/buscarImpresora"
+            style="?attr/estilo_edittext_settings"
+            android:layout_width="380dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="?attr/icon_impresora"
+            android:enabled="false"
+            android:hint="Impresora"
+            app:layout_constraintStart_toStartOf="@+id/unidadEditText"
+            app:layout_constraintTop_toBottomOf="@+id/unidadEditText" />
+
+        <Button
+            android:id="@+id/btnBuscarImpresora"
+            style="?attr/estilo_botones_settings"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:text="Buscar"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/unidadEditText"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/buscarImpresora"
+            app:layout_constraintTop_toTopOf="@+id/buscarImpresora" />
+
+        <Button
+            android:id="@+id/updateBinButton"
+            style="?attr/estilo_botones_settings"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:enabled="true"
+            android:text="Actualizar bines"
+            app:layout_constraintStart_toStartOf="@+id/buscarImpresora"
+            app:layout_constraintTop_toBottomOf="@+id/buscarImpresora" />
+
+        <Button
+            android:id="@+id/themeButton"
+            style="?attr/estilo_botones_settings"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="Cambiar Tema"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/updateBinButton"
+            app:layout_constraintEnd_toEndOf="@+id/btnBuscarImpresora"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/updateBinButton"
+            app:layout_constraintTop_toTopOf="@+id/updateBinButton"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/saveDialogButton"
+            style="?attr/estilo_botones_settings"
+            android:layout_width="450dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="Guardar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/themeButton"
+            app:layout_constraintHorizontal_bias="0.637"
+            app:layout_constraintStart_toStartOf="@+id/updateBinButton"
+            app:layout_constraintTop_toBottomOf="@+id/switchTraining" />
+
+        <ProgressBar
+            android:id="@+id/progressBarBines"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/updateBinButton"
+            app:layout_constraintEnd_toEndOf="@+id/updateBinButton"
+            app:layout_constraintHorizontal_bias="0.965"
+            app:layout_constraintStart_toStartOf="@+id/updateBinButton"
+            app:layout_constraintTop_toTopOf="@+id/updateBinButton"
+            app:layout_constraintVertical_bias="0.529" />
+
+        <Switch
+            android:id="@+id/switchTraining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Modo Trainning"
+            style="@style/SCBSwitch"
+            android:textColorLink="#870404"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateBinButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

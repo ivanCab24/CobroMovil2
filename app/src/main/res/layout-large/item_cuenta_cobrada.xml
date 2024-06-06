@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Fecha:"
+                    style="?attr/estilo_textview_pago_item"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewFechaCuentaCobrada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="4/1/2021 14:06:36"
+                    style="?attr/estilo_textview_pago_item"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView8"
+                    app:layout_constraintStart_toEndOf="@+id/textView8"
+                    app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:text="Folio:"
+                    style="?attr/estilo_textview_pago_item"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewFechaCuentaCobrada"
+                    app:layout_constraintStart_toEndOf="@+id/textViewFechaCuentaCobrada"
+                    app:layout_constraintTop_toTopOf="@+id/textViewFechaCuentaCobrada" />
+
+                <TextView
+                    android:id="@+id/textViewFolioCuentaCobrada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="44125011200100"
+                    style="?attr/estilo_textview_pago_item"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView14"
+                    app:layout_constraintStart_toEndOf="@+id/textView14"
+                    app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:text="Autorización:"
+                    style="?attr/estilo_textview_pago_item"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewPropinaCuentaCobrada"
+                    app:layout_constraintStart_toEndOf="@+id/textViewPropinaCuentaCobrada"
+                    app:layout_constraintTop_toTopOf="@+id/textViewPropinaCuentaCobrada" />
+
+                <TextView
+                    android:id="@+id/textViewAutorizacion"
+                    style="?attr/estilo_textview_pago_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="7955"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView18"
+                    app:layout_constraintStart_toEndOf="@+id/textView18"
+                    app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    style="?attr/estilo_textview_pago_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Mesa:"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textViewMesaCuentaCobrada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="10"
+                    style="?attr/estilo_textview_pago_item"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView34"
+                    app:layout_constraintStart_toEndOf="@+id/textView34"
+                    app:layout_constraintTop_toTopOf="@+id/textView34" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:text="Importe:"
+                    style="?attr/estilo_textview_pago_item"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewMesaCuentaCobrada"
+                    app:layout_constraintStart_toEndOf="@+id/textViewMesaCuentaCobrada"
+                    app:layout_constraintTop_toTopOf="@+id/textViewMesaCuentaCobrada" />
+
+                <TextView
+                    android:id="@+id/textViewImporteCuentaCobrada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="398.0"
+                    style="?attr/estilo_textview_pago_item"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView35"
+                    app:layout_constraintStart_toEndOf="@+id/textView35"
+                    app:layout_constraintTop_toTopOf="@+id/textView35" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:text="Vendedor:"
+                    style="?attr/estilo_textview_pago_item"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewFolioCuentaCobrada"
+                    app:layout_constraintStart_toEndOf="@+id/textViewFolioCuentaCobrada"
+                    app:layout_constraintTop_toTopOf="@+id/textViewFolioCuentaCobrada" />
+
+                <TextView
+                    android:id="@+id/textViewVendedorCuentaCobrada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="108910 MEDINA/GOMEZ/GABRIEL"
+                    style="?attr/estilo_textview_pago_item"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView37"
+                    app:layout_constraintStart_toEndOf="@+id/textView37"
+                    app:layout_constraintTop_toTopOf="@+id/textView37" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:text="Propina:"
+                    style="?attr/estilo_textview_pago_item"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewImporteCuentaCobrada"
+                    app:layout_constraintStart_toEndOf="@+id/textViewImporteCuentaCobrada"
+                    app:layout_constraintTop_toTopOf="@+id/textViewImporteCuentaCobrada" />
+
+                <TextView
+                    android:id="@+id/textViewPropinaCuentaCobrada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="0.0"
+                    style="?attr/estilo_textview_pago_item"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView39"
+                    app:layout_constraintStart_toEndOf="@+id/textView39"
+                    app:layout_constraintTop_toTopOf="@+id/textView39" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:text="Tarjeta:"
+                    style="?attr/estilo_textview_pago_item"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewAutorizacion"
+                    app:layout_constraintStart_toEndOf="@+id/textViewAutorizacion"
+                    app:layout_constraintTop_toTopOf="@+id/textViewAutorizacion"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textViewTarjeta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="8888"
+                    style="?attr/estilo_textview_pago_item"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    app:layout_constraintTop_toTopOf="@+id/textView2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

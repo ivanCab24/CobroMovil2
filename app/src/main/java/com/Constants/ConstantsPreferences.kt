@@ -1,0 +1,36 @@
+package com.Constants
+
+object ConstantsPreferences {
+
+    const val PREF_NAME = "Preferencias"
+    const val PREF_MARCA_SELECCIONADA = "marca"
+    const val PREF_SERVER = "Server"
+    const val PREF_SERVER_COPY = "ServerCopy"
+    const val PREF_PINPAD = "Pinpad"
+    const val PREF_NUMERO_TERMINAL = "NumeroTerminal"
+    const val PREF_UNIDAD = "Unidad"
+    const val PREF_UNIDAD_COPY = "UnidadCopy"
+    const val SWITCH_TRAINING = "SwitchTrainng"
+    const val PREF_IMPRESORA = "impresora"
+    const val PREF_IMPRESORA_NAME = "impresora_name"
+    const val PREF_ESTAFETA = "Estafeta"
+    const val PREF_NOMBRE_EMPLEADO = "estafetaNombre"
+    const val PREF_NUM_COMENSALES = "numeroComensales"
+    const val PREF_FOLIO = "folio"
+    const val PREF_ID_CAJA = "ID_CAJA"
+    const val PREF_CAMPO_ER = "CAMPOER"
+    const val PREF_JSON_DESCUENTOS = "jsonDescuentos"
+    const val PREF_TOKEN = "TOKEN"
+    const val PREF_FOLIO_CUENTA_CERRADA = "folio_cuenta_cerrada"
+    const val PREF_FOLIO_BOUCHER = "folio_boucher"
+    const val PREF_CODBARRAS = "CODBARRAS"
+    const val PREF_IS_VOUCHER = "isVoucher"
+    const val PREF_MESA = "mesa"
+    const val PREF_JSON_MULTIPLES_DESCUENTO = "jsonMultiplesDescuentos"
+    const val PREF_BANDERA_AFILIADO = "banderaAfiliado"
+    const val PREF_JSON_CAJA = "jsonCajaAbierta"
+    const val PREF_CAJA_MP = "cajaMP"
+    const val PREF_INFO_LOCAL = "infoLocal"
+    const val PREF_MODELO_IMPRESORA = "modeloImpresora"
+
+}

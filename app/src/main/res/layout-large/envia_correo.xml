@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?attr/fondo_dialogs"
+    android:orientation="horizontal"
+    android:id="@+id/layoud"
+    tools:ignore="MissingDefaultResource">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="290dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            style="?attr/estilo_textview_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Enviar ticket por correo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dialogMessage"
+            style="?attr/estilo_textview_dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/textView_dialog_charge_message_margin_top"
+            android:text="Ingrese correo"
+            app:layout_constraintBottom_toTopOf="@+id/montoEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialogTitle"
+            app:layout_constraintVertical_bias="0.187" />
+
+
+        <EditText
+            android:id="@+id/montoEditText"
+            style="?attr/estilos_edittext_dialog"
+            android:layout_width="@dimen/editText_correo_width"
+            android:layout_height="@dimen/editText_dialog_correo_height"
+            android:layout_marginBottom="24dp"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/extra"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/extra"
+            android:layout_width="480dp"
+            android:layout_height="23dp"
+            android:background="@color/zxing_transparent"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/cancelarButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/cancelarButton"
+            style="?attr/estilo_botones_dialog"
+            android:layout_width="133dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginBottom="28dp"
+            android:text="Cancelar"
+            android:textSize="@dimen/button_dialog_charge_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/enviarButton"
+            style="?attr/estilo_botones_dialog"
+            android:layout_width="@dimen/button_dialog_charge_cancelar_aceptar_width"
+            android:layout_height="45dp"
+            android:layout_marginStart="@dimen/button_dialog_charge_aceptar_margin_start"
+            android:text="Enviar"
+            android:textSize="@dimen/button_dialog_charge_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/cancelarButton"
+            app:layout_constraintStart_toEndOf="@+id/cancelarButton"
+            app:layout_constraintTop_toTopOf="@+id/cancelarButton"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

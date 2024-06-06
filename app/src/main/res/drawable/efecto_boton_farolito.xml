@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/ripple_efect_farolito">
+
+    <item>
+        <selector>
+
+            <item android:state_pressed="true">
+                <color android:color="@color/rojoFarolito"/>
+            </item>
+
+            <item android:state_enabled="false">
+
+                <color android:color="@color/boton_inhabilitado_farolito"/>
+
+            </item>
+
+            <item>
+                <color android:color="@color/rojoFarolito"/>
+            </item>
+
+
+        </selector>
+    </item>
+
+
+
+</ripple>

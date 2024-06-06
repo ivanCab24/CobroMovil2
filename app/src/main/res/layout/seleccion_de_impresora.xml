@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="750dp"
+    android:layout_height="wrap_content"
+    android:background="@color/zxing_transparent"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="?attr/estilo_textview_dialog_title"
+        android:text="@string/seleccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dialogMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/textView_dialog_formas_pago_margin_top"
+        android:layout_marginStart="@dimen/textView_dialog_formas_pago_margin_start"
+        android:layout_marginEnd="@dimen/textView_dialog_formas_pago_margin_end"
+        android:text="@string/Impresora"
+        android:textSize="@dimen/textView_dialog_formas_pago_message_text_size"
+        android:textColor="@color/whiteToks"
+        style="?attr/textview_subtitulos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogTitle" />
+
+
+    <Spinner
+        android:id="@+id/spinner_impresora"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="fill_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="433dp" />
+
+
+    <Button
+        android:id="@+id/cancelarButton"
+        style="?attr/estilo_botones_dialog"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:textSize="16dp"
+        android:layout_marginEnd="40dp"
+        android:text="Aceptar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cancelar2" />
+
+    <Button
+        android:id="@+id/cancelar2"
+        style="?attr/estilo_botones_dialog"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="36dp"
+        android:text="Cancelar"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/cancelarButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_impresora" />
+
+
+    <Button
+        android:id="@+id/enviarButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Enviar a:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/extra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/extra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="428dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

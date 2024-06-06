@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?attr/fondo_dialogs"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="?attr/estilo_textview_dialog_title"
+        android:text="@string/titulo_pago"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dialogMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/textView_dialog_formas_pago_margin_top"
+        android:layout_marginStart="@dimen/textView_dialog_formas_pago_margin_start"
+        android:layout_marginEnd="@dimen/textView_dialog_formas_pago_margin_end"
+        android:text="@string/pago"
+        android:textSize="@dimen/textView_dialog_formas_pago_message_text_size"
+        android:textColor="@color/whiteToks"
+        style="?attr/textview_subtitulos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogTitle" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/recyclerView_dialog_formas_pago_height"
+        android:layout_marginStart="@dimen/recyclerView_dialog_formas_pago_margin_start"
+        android:layout_marginTop="@dimen/recyclerView_dialog_formas_pago_margin_top"
+        android:layout_marginEnd="@dimen/recyclerView_dialog_formas_pago_margin_end"
+        tools:listitem="@layout/metodo_de_pago_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogMessage" />
+
+    <Button
+        android:id="@+id/cancelarButton"
+        android:layout_width="@dimen/button_dialog_formas_pago_cancelar_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_dialog_formas_pago_cancelar_margin_top"
+        android:layout_marginBottom="@dimen/button_dialog_formas_pago_cancelar_margin_bottom"
+        android:text="Cancelar"
+        style="?attr/estilo_botones_dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerView"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

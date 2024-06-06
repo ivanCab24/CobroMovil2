@@ -1,0 +1,1433 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents">
+        <!-- Customize your theme here. -->
+        <!--item name="colorPrimary">@color/colorPrimary</item-->
+        <item name="colorPrimary">@color/doradoBeer</item>
+        <!--item name="colorPrimaryDark">@color/colorPrimaryDark</item-->
+        <item name="colorPrimaryDark">@color/naranjaToks</item>
+        <!--item name="colorAccent">@color/colorAccent</item-->
+        <item name="colorAccent">@color/naranjaToks</item>
+    </style>
+
+    <style name="TemaToks" parent="">
+
+        <item name="logo">@drawable/logo_toks</item>
+
+        <item name="fondo_negro">@color/backgroundBlackToks</item>
+        <item name="fondo_dialogs">@drawable/rounded_linear_toks</item>
+        <item name="fondo_editText_login">@style/editTextLoginToks</item>
+        <item name="estilo_textview_dialog_title">@style/textViewTitleDialogToks</item>
+        <item name="estilo_edittext_settings">@style/editTextSettingsToks</item>
+        <item name="circulo_central">@drawable/circulo_central_toks</item>
+        <item name="estilo_botones_settings">@style/buttonsSettingsToks</item>
+        <item name="fondo_nodialog_button">@style/buttonNoDialogsToks</item>
+        <item name="fondo_separadores">@drawable/gradient_toks</item>
+        <item name="textview_menu_lateral">@style/textViewTextMenuLateralToks</item>
+        <item name="textview_titulos_pagos">@style/textViewTitulosPagosToks</item>
+        <item name="textview_titulos">@style/textViewTitulosContentFragmentToks</item>
+        <item name="estilo_botones_propina">@style/estiloTipButtonsToks</item>
+        <item name="estilo_edittext_propina">@style/estiloEditTextTipToks</item>
+        <item name="estilo_edittext_mesa">@style/estiloEditTextMesaToks</item>
+        <item name="estilo_checkbox_cuenta">@style/estiloCheckBoxCuentaToks</item>
+        <item name="estilo_boton_porcobrar">@style/estilo_boton_porcobrar_toks</item>
+        <item name="estilo_textview_dialog_message">@style/estilo_textview_dialog_message_toks
+        </item>
+        <item name="estilo_botones_dialog">@style/estilo_botones_dialog_toks</item>
+        <item name="estilos_textos_dialog_reimprimir">
+            @style/estilo_textview_dialog_reimprimir_toks
+        </item>
+        <item name="estilos_edittext_dialog">@style/estilo_edittext_dialog_toks</item>
+        <item name="estilos_textview_dialog_imprimir">@style/estilo_textview_dialog_imprimir_toks
+        </item>
+        <item name="estilo_textview_dialog_charge">@style/estilo_textview_dialog_charge_toks</item>
+        <item name="estilo_textview_total_charge">@style/estilo_textview_total_charge_toks</item>
+        <item name="estilo_textview_descuento_aplicado_item">
+            @style/estilo_textview_descuento_aplicado_toks
+        </item>
+        <item name="estilo_textview_pago_item">@style/estilo_textview_payment_item_toks</item>
+        <item name="estilo_textview_filtrarpor">@style/estilo_textview_filtrarpor_toks</item>
+        <item name="color_oval_shape">@color/naranjaToks</item>
+        <item name="estilo_numberpicker_buttons">@style/numberPickerButtonToks</item>
+        <item name="textview_subtitulos">@style/textViewSubTitulosContentFragmentToks</item>
+        <item name="color_card_item">@color/whiteToks</item>
+        <item name="color_card_item_opcional">@color/whiteToks</item>
+        <item name="textview_printer">@style/estilo_textview_printer_toks</item>
+        <item name="estilo_radiobutton_filter">@style/estilo_radio_button_toks</item>
+        <item name="color_descripcion_descuento">@color/cardBackgroundToks</item>
+        <item name="color_tint">@color/naranjaToks</item>
+        <item name="color_progressbar">@color/progressbar_color_toks</item>
+
+        <item name="icon_user">@drawable/user_toks</item>
+        <item name="icon_password">@drawable/password_toks</item>
+        <item name="icon_settings_login">@drawable/settings_login_toks</item>
+        <item name="icon_subir">@drawable/ic_cloud_toks</item>
+        <item name="icon_descarga">@drawable/ic_descarga_toks</item>
+        <item name="icon_ip">@drawable/ip_toks</item>
+        <item name="icon_pinpad">@drawable/pinpad_toks</item>
+        <item name="icon_acomer">@drawable/acomer_btn_toks</item>
+        <item name="icon_unidad">@drawable/unidad_toks</item>
+        <item name="icon_impresora">@drawable/ic_impresora_toks</item>
+        <item name="icon_reimprimir">@drawable/ic_reimprimir_toks</item>
+        <item name="icon_salir">@drawable/salir_toks</item>
+        <item name="icon_reset_keys">@drawable/ic_reset_keys_toks</item>
+        <item name="icon_identificar_miembro">@drawable/ic_descuento_toks</item>
+        <item name="icon_peso">@drawable/peso_toks</item>
+        <item name="icon_porcentaje">@drawable/porcentaje_toks</item>
+        <item name="icon_delete">@drawable/delete_toks</item>
+        <item name="icon_reimprimir_boucher">@drawable/boucher_toks</item>
+        <item name="icon_reimprimir_ticket">@drawable/ticket_toks</item>
+        <item name="icon_actualizar">@drawable/ic_actualizar_toks</item>
+        <item name="icon_close">@drawable/ic_close_toks</item>
+        <item name="icon_cancelar">@drawable/cancelar_toks</item>
+        <item name="icon_correo">@drawable/correo_toks</item>
+        <item name="icon_sms">@drawable/sms_toks</item>
+        <item name="icon_imprimir">@drawable/imprimir_toks</item>
+        <item name="icon_escanear">@drawable/boucher_toks</item>
+        <item name="icon_aceptar">@drawable/ic_aceptar_toks</item>
+        <item name="icon_inicio">@drawable/ic_inicio_toks</item>
+        <item name="icon_caja">@drawable/ic_cajero_toks</item>
+        <item name="icon_close_account">@drawable/ic_close_account_toks</item>
+        <item name="icon_mp_mini">@drawable/mp_mini</item>
+
+
+    </style>
+
+    <style name="TemaBeer" parent="">
+
+        <item name="logo">@drawable/logo_negro</item>
+
+        <item name="fondo_negro">@color/backgroundBlackBeer</item>
+        <item name="fondo_dialogs">@drawable/rounded_linear</item>
+        <item name="fondo_editText_login">@style/editTextLogin</item>
+        <item name="estilo_textview_dialog_title">@style/textViewTitleDialogBeer</item>
+        <item name="estilo_edittext_settings">@style/editTextSettingsBeer</item>
+        <item name="circulo_central">@drawable/circulo_central</item>
+        <item name="estilo_botones_settings">@style/buttonsSettingsBeer</item>
+        <item name="fondo_nodialog_button">@style/buttonNoDialogs</item>
+        <item name="fondo_separadores">@drawable/gradient</item>
+        <item name="textview_menu_lateral">@style/textViewTextMenuLateralBeer</item>
+        <item name="textview_titulos_pagos">@style/textViewTitulosPagosBeer</item>
+        <item name="textview_titulos">@style/textViewTitulosContentFragmentBeer</item>
+        <item name="estilo_botones_propina">@style/estiloTipButtonsBeer</item>
+        <item name="estilo_edittext_propina">@style/estiloEditTextTipBeer</item>
+        <item name="estilo_edittext_mesa">@style/estiloEditTextMesaBeer</item>
+        <item name="estilo_checkbox_cuenta">@style/estiloCheckBoxCuentaBeer</item>
+        <item name="estilo_boton_porcobrar">@style/estilo_boton_porcobrar_beer</item>
+        <item name="estilo_textview_dialog_message">@style/estilo_textview_dialog_message_beer
+        </item>
+        <item name="estilo_botones_dialog">@style/estilo_botones_dialog_beer</item>
+        <item name="estilos_textos_dialog_reimprimir">
+            @style/estilo_textview_dialog_reimprimir_beer
+        </item>
+        <item name="estilos_edittext_dialog">@style/estilo_edittext_dialog_beer</item>
+        <item name="estilos_textview_dialog_imprimir">@style/estilo_textview_dialog_imprimir_beer
+        </item>
+        <item name="estilo_textview_dialog_charge">@style/estilo_textview_dialog_charge_beer</item>
+        <item name="estilo_textview_total_charge">@style/estilo_textview_total_charge_beer</item>
+        <item name="estilo_textview_descuento_aplicado_item">
+            @style/estilo_textview_descuento_aplicado_beer
+        </item>
+        <item name="estilo_textview_pago_item">@style/estilo_textview_payment_item_beer</item>
+        <item name="estilo_textview_filtrarpor">@style/estilo_textview_filtrarpor_beer</item>
+        <item name="color_oval_shape">@color/doradoBeer</item>
+        <item name="estilo_numberpicker_buttons">@style/numberPickerButtonBeer</item>
+        <item name="textview_subtitulos">@style/textViewSubTitulosContentFragmentBeer</item>
+        <item name="color_card_item">@color/cardBacgroundBeer</item>
+        <item name="color_card_item_opcional">@color/whiteBeer</item>
+        <item name="textview_printer">@style/estilo_textview_printer_beer</item>
+        <item name="estilo_radiobutton_filter">@style/estilo_radio_button_beer</item>
+        <item name="color_descripcion_descuento">@color/backgroundBlackBeer</item>
+        <item name="color_tint">@color/doradoBeer</item>
+        <item name="color_progressbar">@color/progressbar_color_beer</item>
+
+        <item name="icon_user">@drawable/user</item>
+        <item name="icon_password">@drawable/password</item>
+        <item name="icon_settings_login">@drawable/settings_login</item>
+        <item name="icon_subir">@drawable/ic_cloud_bf</item>
+        <item name="icon_descarga">@drawable/ic_descarga</item>
+        <item name="icon_ip">@drawable/ip</item>
+        <item name="icon_pinpad">@drawable/pinpad1</item>
+        <item name="icon_unidad">@drawable/unidad</item>
+        <item name="icon_impresora">@drawable/ic_impresora</item>
+        <item name="icon_reimprimir">@drawable/ticketbtn</item>
+        <item name="icon_salir">@drawable/salir</item>
+        <item name="icon_reset_keys">@drawable/ic_reset_keys</item>
+        <item name="icon_identificar_miembro">@drawable/ic_descuento</item>
+        <item name="icon_peso">@drawable/peso</item>
+        <item name="icon_porcentaje">@drawable/porcentaje</item>
+        <item name="icon_delete">@drawable/delete</item>
+        <item name="icon_reimprimir_boucher">@drawable/boucher</item>
+        <item name="icon_reimprimir_ticket">@drawable/ticket</item>
+        <item name="icon_actualizar">@drawable/ic_actualizar</item>
+        <item name="icon_close">@drawable/ic_close</item>
+        <item name="icon_acomer">@drawable/acomer_btn_bf</item>
+        <item name="icon_cancelar">@drawable/cancelar</item>
+        <item name="icon_correo">@drawable/correo</item>
+        <item name="icon_sms">@drawable/sms</item>
+        <item name="icon_imprimir">@drawable/imprimir</item>
+        <item name="icon_escanear">@drawable/boucher</item>
+        <item name="icon_aceptar">@drawable/ic_aceptar</item>
+        <item name="icon_inicio">@drawable/ic_inicio</item>
+        <item name="icon_caja">@drawable/ic_cajero</item>
+        <item name="icon_close_account">@drawable/ic_close_account</item>
+        <item name="icon_mp_mini">@drawable/mp_mini</item>
+
+
+    </style>
+
+    <style name="TemaFarolito" parent="">
+
+        <item name="logo">@drawable/logo_farolito</item>
+
+        <item name="fondo_negro">@color/bacgroundFarolito</item>
+        <item name="fondo_dialogs">@drawable/rounded_linear_farolito</item>
+        <item name="fondo_editText_login">@style/editTextLoginFarolito</item>
+        <item name="estilo_textview_dialog_title">@style/textViewTitleDialogFarolito</item>
+        <item name="estilo_edittext_settings">@style/editTextSettingsFarolito</item>
+        <item name="circulo_central">@drawable/circulo_central_farolito</item>
+        <item name="estilo_botones_settings">@style/buttonsSettingsFarolito</item>
+        <item name="fondo_nodialog_button">@style/buttonNoDialogsFarolito</item>
+        <item name="fondo_separadores">@drawable/gradient_farolito</item>
+        <item name="textview_menu_lateral">@style/textViewTextMenuLateralFarolito</item>
+        <item name="textview_titulos_pagos">@style/textViewTitulosPagosFarolito</item>
+        <item name="textview_titulos">@style/textViewTitulosContentFragmentFarolito</item>
+        <item name="estilo_botones_propina">@style/estiloTipButtonsFarolito</item>
+        <item name="estilo_edittext_propina">@style/estiloEditTextTipFarolito</item>
+        <item name="estilo_edittext_mesa">@style/estiloEditTextMesaFarolito</item>
+        <item name="estilo_checkbox_cuenta">@style/estiloCheckBoxCuentaFarolito</item>
+        <item name="estilo_boton_porcobrar">@style/estilo_boton_porcobrar_farolito</item>
+        <item name="estilo_textview_dialog_message">@style/estilo_textview_dialog_message_farolito
+        </item>
+        <item name="estilo_botones_dialog">@style/estilo_botones_dialog_farolito</item>
+        <item name="estilos_textos_dialog_reimprimir">
+            @style/estilo_textview_dialog_reimprimir_farolito
+        </item>
+        <item name="estilos_edittext_dialog">@style/estilo_edittext_dialog_farolito</item>
+        <item name="estilos_textview_dialog_imprimir">
+            @style/estilo_textview_dialog_imprimir_farolito
+        </item>
+        <item name="estilo_textview_dialog_charge">@style/estilo_textview_dialog_charge_farolito
+        </item>
+        <item name="estilo_textview_total_charge">@style/estilo_textview_total_charge_farolito
+        </item>
+        <item name="estilo_textview_descuento_aplicado_item">
+            @style/estilo_textview_descuento_aplicado_farolito
+        </item>
+        <item name="estilo_textview_pago_item">@style/estilo_textview_payment_item_farolito</item>
+        <item name="estilo_textview_filtrarpor">@style/estilo_textview_filtrarpor_toks</item>
+        <item name="color_oval_shape">@color/rojoFarolito</item>
+        <item name="estilo_numberpicker_buttons">@style/numberPickerButtonFarolito</item>
+        <item name="textview_subtitulos">@style/textViewSubTitulosContentFragmentFarolito</item>
+        <item name="color_card_item">@color/cardBackgroundFarolito</item>
+        <item name="color_card_item_opcional">@color/whiteFarolito</item>
+        <item name="textview_printer">@style/estilo_textview_printer_farolito</item>
+        <item name="estilo_radiobutton_filter">@style/estilo_radio_button_farolito</item>
+        <item name="color_descripcion_descuento">@color/backgroundBlackBeer</item>
+        <item name="color_tint">@color/rojoFarolito</item>
+        <item name="color_progressbar">@color/progressbar_color_farolito</item>
+
+        <item name="icon_user">@drawable/user_farolito</item>
+        <item name="icon_password">@drawable/password_farolito</item>
+        <item name="icon_settings_login">@drawable/settings_login_farolito</item>
+        <item name="icon_subir">@drawable/ic_cloud_farol</item>
+        <item name="icon_descarga">@drawable/ic_descarga_farolito</item>
+        <item name="icon_ip">@drawable/ip_farolito</item>
+        <item name="icon_pinpad">@drawable/pinpad_farolito</item>
+        <item name="icon_unidad">@drawable/unidad_farolito</item>
+        <item name="icon_impresora">@drawable/ic_impresora_farolito</item>
+        <item name="icon_reimprimir">@drawable/ticketbtn_farolito</item>
+        <item name="icon_salir">@drawable/salir_farolito</item>
+        <item name="icon_reset_keys">@drawable/ic_reset_keys_farolito</item>
+        <item name="icon_identificar_miembro">@drawable/ic_descuento_farolito</item>
+        <item name="icon_peso">@drawable/peso_farolito</item>
+        <item name="icon_porcentaje">@drawable/porcentaje_farolito</item>
+        <item name="icon_delete">@drawable/delete_farolito</item>
+        <item name="icon_acomer">@drawable/acomer_btn_farol</item>
+        <item name="icon_reimprimir_boucher">@drawable/boucher_farolito</item>
+        <item name="icon_reimprimir_ticket">@drawable/ticket_farolito</item>
+        <item name="icon_actualizar">@drawable/ic_actualizar_farolito</item>
+        <item name="icon_close">@drawable/ic_close_farolito</item>
+        <item name="icon_cancelar">@drawable/cancelar_farolito</item>
+        <item name="icon_correo">@drawable/correo_farolito</item>
+        <item name="icon_sms">@drawable/sms_farolito</item>
+        <item name="icon_imprimir">@drawable/imprimir_farolito</item>
+        <item name="icon_escanear">@drawable/boucher_farolito</item>
+        <item name="icon_aceptar">@drawable/ic_aceptar_farolito</item>
+        <item name="icon_inicio">@drawable/ic_inicio_farolito</item>
+        <item name="icon_caja">@drawable/ic_cajero_farolito</item>
+        <item name="icon_close_account">@drawable/ic_close_account_farolito</item>
+        <item name="icon_mp_mini">@drawable/mp_mini</item>
+
+
+    </style>
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/colorPrimary</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/bacgroundFarolito
+        </item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/colorLightGray
+        </item>
+    </style>
+
+    <!--Inicia ButtonNoDialogs-->
+    <style name="buttonNoDialogsToks" parent="Widget.AppCompat.Button">
+
+        <item name="android:background">@drawable/efecto_boton_toks</item>
+        <item name="background">@drawable/efecto_boton_toks</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/whiteToks</item>
+        <item name="android:textSize">@dimen/button_text_size_no_dialog</item>
+        <item name="fontFamily">@font/black_toks</item>
+        <item name="android:fontFamily">@font/black_toks</item>
+
+    </style>
+
+    <style name="buttonNoDialogs" parent="Widget.AppCompat.Button">
+
+        <item name="android:background">@drawable/efecto_boton</item>
+        <item name="background">@drawable/efecto_boton</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/button_text_size_no_dialog</item>
+        <item name="fontFamily">@font/gbold</item>
+        <item name="android:fontFamily">@font/gbold</item>
+
+    </style>
+
+    <style name="buttonNoDialogsFarolito" parent="Widget.AppCompat.Button">
+
+        <item name="android:background">@drawable/efecto_boton_farolito</item>
+        <item name="background">@drawable/efecto_boton_farolito</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/whiteFarolito</item>
+        <item name="android:textSize">@dimen/button_text_size_no_dialog</item>
+        <item name="fontFamily">@font/black_toks</item>
+        <item name="android:fontFamily">@font/black_toks</item>
+
+    </style>
+
+    <!--Termina ButtonNoDialogs-->
+
+    <!--Inicia EditTextLogin-->
+    <style name="editTextLoginToks" parent="Widget.AppCompat.EditText">
+
+        <item name="background">@drawable/efecto_edit_text_toks</item>
+        <item name="android:background">@drawable/efecto_edit_text_toks</item>
+        <item name="android:textCursorDrawable">@drawable/color_edit_text_cursor_toks</item>
+        <item name="android:textColor">@color/naranjaToks</item>
+        <item name="android:textColorHint">@color/naranjaToks</item>
+        <item name="android:textSize">@dimen/editText_text_size</item>
+        <item name="android:textAlignment">center</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="android:paddingLeft">@dimen/padding_edit_text_login_left</item>
+        <item name="android:paddingTop">@dimen/padding_edit_text_login_top</item>
+        <item name="android:paddingRight">@dimen/padding_edit_text_login_right</item>
+        <item name="android:paddingBottom">@dimen/padding_edit_text_login_bottom</item>
+
+    </style>
+
+    <style name="editTextLogin" parent="Widget.AppCompat.EditText">
+
+        <item name="background">@drawable/efecto_edit_text</item>
+        <item name="android:background">@drawable/efecto_edit_text</item>
+        <item name="android:textCursorDrawable">@drawable/color_edit_text_cursor</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textSize">@dimen/editText_text_size</item>
+        <item name="android:textAlignment">center</item>
+        <item name="fontFamily">@font/gbook</item>
+        <item name="android:fontFamily">@font/gbook</item>
+        <item name="android:paddingLeft">@dimen/padding_edit_text_login_left</item>
+        <item name="android:paddingTop">@dimen/padding_edit_text_login_top</item>
+        <item name="android:paddingRight">@dimen/padding_edit_text_login_right</item>
+        <item name="android:paddingBottom">@dimen/padding_edit_text_login_bottom</item>
+
+
+    </style>
+
+    <style name="editTextLoginFarolito" parent="Widget.AppCompat.EditText">
+
+        <item name="background">@drawable/efecto_edit_text_farolito</item>
+        <item name="android:background">@drawable/efecto_edit_text_farolito</item>
+        <item name="android:textCursorDrawable">@drawable/color_edit_text_cursor_farolito</item>
+        <item name="android:textColor">@color/bacgroundFarolito</item>
+        <item name="android:textColorHint">@color/bacgroundFarolito</item>
+        <item name="android:textSize">@dimen/editText_text_size</item>
+        <item name="android:textAlignment">center</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="android:paddingLeft">@dimen/padding_edit_text_login_left</item>
+        <item name="android:paddingTop">@dimen/padding_edit_text_login_top</item>
+        <item name="android:paddingRight">@dimen/padding_edit_text_login_right</item>
+        <item name="android:paddingBottom">@dimen/padding_edit_text_login_bottom</item>
+
+
+    </style>
+
+    <!--Termina EditTextLogin-->
+
+    <!--Inicia TextView TitleDialog-->
+
+    <style name="textViewTitleDialogBeer" parent="Widget.AppCompat.TextView">
+
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="fontFamily">@font/gbook</item>
+        <item name="android:fontFamily">@font/gbook</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/doradoBeer</item>
+        <item name="android:textSize">@dimen/textView_dialog_titulo_text_size</item>
+
+    </style>
+
+    <style name="textViewTitleDialogToks" parent="Widget.AppCompat.TextView">
+
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/naranjaToks</item>
+        <item name="android:textSize">@dimen/textView_dialog_titulo_text_size</item>
+
+    </style>
+
+    <style name="textViewTitleDialogFarolito" parent="Widget.AppCompat.TextView">
+
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/rojoFarolito</item>
+        <item name="android:textSize">@dimen/textView_dialog_titulo_text_size</item>
+
+    </style>
+
+    <!--Termina TextView TitleDialog-->
+
+    <!--Inicia EditTextSettings-->
+
+    <style name="editTextSettingsBeer" parent="Widget.AppCompat.EditText">
+
+        <item name="background">@drawable/efecto_edit_text</item>
+        <item name="android:background">@drawable/efecto_edit_text</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:fontFamily">@font/gbook</item>
+        <item name="fontFamily">@font/gbook</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/editText_settings_size</item>
+        <item name="android:textColor">@color/backgroundBlackBeer</item>
+        <item name="android:textColorHint">@color/backgroundBlackBeer</item>
+        <item name="android:textCursorDrawable">@drawable/color_edit_text_cursor</item>
+
+    </style>
+
+    <style name="editTextSettingsToks" parent="Widget.AppCompat.EditText">
+
+        <item name="background">@drawable/efecto_edit_text_toks</item>
+        <item name="android:background">@drawable/efecto_edit_text_toks</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/editText_settings_size</item>
+        <item name="android:textColor">@color/naranjaToks</item>
+        <item name="android:textColorHint">@color/naranjaToks</item>
+        <item name="android:textCursorDrawable">@drawable/color_edit_text_cursor_toks</item>
+
+    </style>
+
+    <style name="editTextSettingsFarolito" parent="Widget.AppCompat.EditText">
+
+        <item name="background">@drawable/efecto_edit_text_farolito</item>
+        <item name="android:background">@drawable/efecto_edit_text_farolito</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/editText_settings_size</item>
+        <item name="android:textColor">@color/bacgroundFarolito</item>
+        <item name="android:textColorHint">@color/bacgroundFarolito</item>
+        <item name="android:textCursorDrawable">@drawable/color_edit_text_cursor_farolito</item>
+
+    </style>
+
+    <!--Termina EditTextSettings-->
+
+    <!--Inicia Button Settings-->
+    <style name="buttonsSettingsBeer" parent="Widget.AppCompat.Button">
+
+        <item name="background">@drawable/efecto_boton</item>
+        <item name="android:background">@drawable/efecto_boton</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="fontFamily">@font/gbold</item>
+        <item name="android:fontFamily">@font/gbold</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/button_text_settings_size</item>
+        <item name="android:textColor">@color/backgroundBlackBeer</item>
+        <item name="android:stateListAnimator">@null</item>
+
+    </style>
+
+    <style name="buttonsSettingsToks" parent="Widget.AppCompat.Button">
+
+        <item name="background">@drawable/efecto_boton_toks</item>
+        <item name="android:background">@drawable/efecto_boton_toks</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="fontFamily">@font/black_toks</item>
+        <item name="android:fontFamily">@font/black_toks</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/button_text_settings_size</item>
+        <item name="android:textColor">@color/whiteToks</item>
+        <item name="android:stateListAnimator">@null</item>
+
+    </style>
+
+    <style name="buttonsSettingsFarolito" parent="Widget.AppCompat.Button">
+
+        <item name="background">@drawable/efecto_boton_farolito</item>
+        <item name="android:background">@drawable/efecto_boton_farolito</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="fontFamily">@font/black_toks</item>
+        <item name="android:fontFamily">@font/black_toks</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/button_text_settings_size</item>
+        <item name="android:textColor">@color/whiteFarolito</item>
+        <item name="android:stateListAnimator">@null</item>
+
+    </style>
+
+
+    <!--Termina Button Settings-->
+
+    <!--Inicia TextView MenuLateral-->
+
+    <style name="textViewTextMenuLateralBeer" parent="Widget.AppCompat.TextView">
+
+        <item name="fontFamily">@font/gbook</item>
+        <item name="android:fontFamily">@font/gbook</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/doradoBeer</item>
+
+    </style>
+
+    <style name="textViewTextMenuLateralToks" parent="Widget.AppCompat.TextView">
+
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/whiteToks</item>
+
+    </style>
+
+    <style name="textViewTextMenuLateralFarolito" parent="Widget.AppCompat.TextView">
+
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/whiteFarolito</item>
+
+    </style>
+
+    <!--Termina TextView MenuLateral-->
+
+    <!--Inicia TextView TitulosPagos-->
+
+    <style name="textViewTitulosPagosBeer" parent="Widget.AppCompat.TextView">
+
+        <item name="android:textColor">@color/doradoBeer</item>
+        <item name="android:textSize">@dimen/textView_titulos_pagos_text_size</item>
+        <item name="fontFamily">@font/gbook</item>
+        <item name="android:fontFamily">@font/gbook</item>
+
+    </style>
+
+    <style name="textViewTitulosPagosToks" parent="Widget.AppCompat.TextView">
+
+        <item name="android:textColor">@color/naranjaToks</item>
+        <item name="android:textSize">@dimen/textView_titulos_pagos_text_size</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+
+    </style>
+
+    <style name="textViewTitulosPagosFarolito" parent="Widget.AppCompat.TextView">
+
+        <item name="android:textColor">@color/rojoFarolito</item>
+        <item name="android:textSize">@dimen/textView_titulos_pagos_text_size</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+
+    </style>
+
+    <!--Termina TextView TitulosPagos-->
+
+    <!--Inicia TextView TitulosContentFragment-->
+
+    <style name="textViewTitulosContentFragmentBeer" parent="Widget.AppCompat.TextView">
+
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/doradoBeer</item>
+        <item name="android:textSize">@dimen/textView_text_size_titulos</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="fontFamily">@font/gbook</item>
+        <item name="android:fontFamily">@font/gbook</item>
+
+    </style>
+
+    <style name="textViewTitulosContentFragmentToks" parent="Widget.AppCompat.TextView">
+
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/naranjaToks</item>
+        <item name="android:textSize">@dimen/textView_text_size_titulos</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+
+    </style>
+
+    <style name="textViewTitulosContentFragmentFarolito" parent="Widget.AppCompat.TextView">
+
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/rojoFarolito</item>
+        <item name="android:textSize">@dimen/textView_text_size_titulos</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+
+    </style>
+
+    <!--Termina TextView TitulosContentFragment-->
+
+    <!--Inicia TextView SubTitulosContentFragment-->
+
+    <style name="textViewSubTitulosContentFragmentBeer" parent="Widget.AppCompat.TextView">
+
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@color/doradoBeer</item>
+        <item name="android:textSize">@dimen/textView_circulo_central_subtitulos_text_size</item>
+        <item name="android:fontFamily">@font/gbook</item>
+        <item name="fontFamily">@font/gbook</item>
+
+    </style>
+
+    <style name="textViewSubTitulosContentFragmentToks" parent="Widget.AppCompat.TextView">
+
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@color/naranjaToks</item>
+        <item name="android:textSize">@dimen/textView_circulo_central_subtitulos_text_size</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+
+    </style>
+    <style name="estiloCeldaWhite" parent="Widget.AppCompat.Button">
+
+        <item name="android:background">@color/white</item>
+        <item name="background">@color/white</item>
+
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/gbook</item>
+        <item name="fontFamily">@font/gbook</item>
+
+    </style>
+    <style name="textViewSubTitulosContentFragmentFarolito" parent="Widget.AppCompat.TextView">
+
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@color/rojoFarolito</item>
+        <item name="android:textSize">@dimen/textView_circulo_central_subtitulos_text_size</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+
+    </style>
+
+    <!--Termina TextView SubTitulosContentFragment-->
+
+
+    <!--Inicia Estilo TipButtons-->
+
+    <style name="estiloTipButtonsBeer" parent="Widget.AppCompat.Button">
+
+        <item name="android:background">@drawable/tip</item>
+        <item name="background">@drawable/tip</item>
+        <item name="android:textColor">@color/backgroundBlackBeer</item>
+        <item name="android:textSize">@dimen/imageButton_tip_text_size</item>
+        <item name="android:fontFamily">@font/gbook</item>
+        <item name="fontFamily">@font/gbook</item>
+
+    </style>
+
+    <style name="estiloTipButtonsToks" parent="Widget.AppCompat.Button">
+
+        <item name="android:background">@drawable/tip_toks</item>
+        <item name="background">@drawable/tip_toks</item>
+        <item name="android:textColor">@color/whiteToks</item>
+        <item name="android:textSize">@dimen/imageButton_tip_text_size</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+
+    </style>
+
+    <style name="estiloTipButtonsFarolito" parent="Widget.AppCompat.Button">
+        tip
+        <item name="android:background">@drawable/tip_farolito</item>
+        <item name="background">@drawable/tip_farolito</item>
+        <item name="android:textColor">@color/whiteFarolito</item>
+        <item name="android:textSize">@dimen/imageButton_tip_text_size</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+
+    </style>
+
+    <!--Termina Estilo TipButtons-->
+
+    <!--Inicia Estilo EditTextTip-->
+
+    <style name="estiloEditTextTipBeer" parent="Widget.AppCompat.TextView">
+
+        <item name="android:background">@drawable/efecto_edit_text</item>
+        <item name="background">@drawable/efecto_edit_text</item>
+        <item name="android:fontFamily">@font/gbook</item>
+        <item name="fontFamily">@font/gbook</item>
+        <item name="android:textSize">@dimen/editText_tip_text_size</item>
+        <item name="android:textColor">@color/backgroundBlackBeer</item>
+        <item name="android:textColorHint">@color/backgroundBlackBeer</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textCursorDrawable">@drawable/color_edit_text_cursor</item>
+        <item name="android:inputType">number|numberDecimal</item>
+
+    </style>
+
+    <style name="estiloEditTextTipToks" parent="Widget.AppCompat.TextView">
+
+        <item name="android:background">@drawable/efecto_edit_text_toks</item>
+        <item name="background">@drawable/efecto_edit_text_toks</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:textSize">@dimen/editText_tip_text_size</item>
+        <item name="android:textColor">@color/naranjaToks</item>
+        <item name="android:textColorHint">@color/naranjaToks</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textCursorDrawable">@drawable/color_edit_text_cursor_toks</item>
+        <item name="android:inputType">number|numberDecimal</item>
+
+    </style>
+
+    <style name="estiloEditTextTipFarolito" parent="Widget.AppCompat.TextView">
+
+        <item name="android:background">@drawable/efecto_edit_text_farolito</item>
+        <item name="background">@drawable/efecto_edit_text_farolito</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:textSize">@dimen/editText_tip_text_size</item>
+        <item name="android:textColor">@color/bacgroundFarolito</item>
+        <item name="android:textColorHint">@color/bacgroundFarolito</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textCursorDrawable">@drawable/color_edit_text_cursor_farolito</item>
+        <item name="android:inputType">number|numberDecimal</item>
+
+    </style>
+
+    <!--Termina Estilo EditTextTip-->
+
+    <!--Inicia Estilo EditTextMesa-->
+
+    <style name="estiloEditTextMesaBeer" parent="Widget.AppCompat.EditText">
+
+        <item name="android:background">@drawable/efecto_edit_text</item>
+        <item name="background">@drawable/efecto_edit_text</item>
+        <item name="android:fontFamily">@font/gbook</item>
+        <item name="fontFamily">@font/gbook</item>
+        <item name="android:inputType">number</item>
+        <item name="android:paddingStart">@dimen/editText_mesa_padding</item>
+        <item name="android:paddingEnd">@dimen/editText_mesa_padding</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/backgroundBlackBeer</item>
+        <item name="android:textColorHint">@color/backgroundBlackBeer</item>
+        <item name="android:textSize">@dimen/editText_mesa_text_size</item>
+        <item name="android:textCursorDrawable">@drawable/color_edit_text_cursor</item>
+
+    </style>
+
+    <style name="estiloEditTextMesaToks" parent="Widget.AppCompat.EditText">
+
+        <item name="android:background">@drawable/efecto_edit_text_toks</item>
+        <item name="background">@drawable/efecto_edit_text_toks</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:inputType">number</item>
+        <item name="android:paddingStart">@dimen/editText_mesa_padding</item>
+        <item name="android:paddingEnd">@dimen/editText_mesa_padding</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/naranjaToks</item>
+        <item name="android:textColorHint">@color/naranjaToks</item>
+        <item name="android:textSize">@dimen/editText_mesa_text_size</item>
+        <item name="android:textCursorDrawable">@drawable/color_edit_text_cursor_toks</item>
+
+    </style>
+
+    <style name="estiloEditTextMesaFarolito" parent="Widget.AppCompat.EditText">
+
+        <item name="android:background">@drawable/efecto_edit_text_farolito</item>
+        <item name="background">@drawable/efecto_edit_text_farolito</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:inputType">number</item>
+        <item name="android:paddingStart">@dimen/editText_mesa_padding</item>
+        <item name="android:paddingEnd">@dimen/editText_mesa_padding</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/bacgroundFarolito</item>
+        <item name="android:textColorHint">@color/bacgroundFarolito</item>
+        <item name="android:textSize">@dimen/editText_mesa_text_size</item>
+        <item name="android:textCursorDrawable">@drawable/color_edit_text_cursor_farolito</item>
+
+    </style>
+
+    <!--Termina Estilo EditTextMesa-->
+
+    <!--Inicia Estilo CheckBoxCuenta-->
+
+    <style name="estiloCheckBoxCuentaBeer" parent="Widget.AppCompat.CompoundButton.CheckBox">
+
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:buttonTint">@color/doradoBeer</item>
+        <item name="android:textColor">@color/whiteBeer</item>
+        <item name="android:textSize">@dimen/checkBox_cuenta_separada_text_size</item>
+        <item name="android:fontFamily">@font/gbook</item>
+        <item name="fontFamily">@font/gbook</item>
+
+    </style>
+
+    <style name="estiloCheckBoxCuentaToks" parent="Widget.AppCompat.CompoundButton.CheckBox">
+
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:buttonTint">@color/naranjaToks</item>
+        <item name="android:textColor">@color/whiteToks</item>
+        <item name="android:textSize">@dimen/checkBox_cuenta_separada_text_size</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+
+    </style>
+
+    <style name="estiloCheckBoxCuentaFarolito" parent="Widget.AppCompat.CompoundButton.CheckBox">
+
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:buttonTint">@color/rojoFarolito</item>
+        <item name="android:textColor">@color/whiteToks</item>
+        <item name="android:textSize">@dimen/checkBox_cuenta_separada_text_size</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+
+    </style>
+
+    <!--Termina Estilo CheckBoxCuenta-->
+
+    <!--Inicia NumberPicker-->
+
+    <style name="numberPickerButtonBeer">
+
+        <item name="android:padding">0dp</item>
+        <item name="android:textColor">@color/backgroundBlackBeer</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:background">@drawable/oval_shape</item>
+        <item name="android:fontFamily">@font/gbold</item>
+        <item name="fontFamily">@font/gbold</item>
+
+    </style>
+
+    <style name="numberPickerButtonToks">
+
+        <item name="android:padding">0dp</item>
+        <item name="android:textColor">@color/whiteToks</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:background">@drawable/oval_shape</item>
+        <item name="android:fontFamily">@font/black_toks</item>
+        <item name="fontFamily">@font/black_toks</item>
+
+    </style>
+
+    <style name="numberPickerButtonFarolito">
+
+        <item name="android:padding">0dp</item>
+        <item name="android:textColor">@color/whiteFarolito</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:background">@drawable/oval_shape</item>
+        <item name="android:fontFamily">@font/black_toks</item>
+        <item name="fontFamily">@font/black_toks</item>
+
+    </style>
+
+    <!--Termina NumberPicker-->
+
+    <!--Inicia BotonporCobrar-->
+
+    <style name="estilo_boton_porcobrar_beer" parent="Widget.AppCompat.Button">
+
+        <item name="android:background">@drawable/efecto_boton</item>
+        <item name="background">@drawable/efecto_boton</item>
+        <item name="android:fontFamily">@font/gbold</item>
+        <item name="fontFamily">@font/gbold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/backgroundBlackBeer</item>
+        <item name="android:textSize">@dimen/button_circulo_central_por_cobrar_text_size</item>
+
+    </style>
+
+    <style name="estilo_boton_porcobrar_toks" parent="Widget.AppCompat.Button">
+
+        <item name="android:background">@drawable/efecto_boton_toks</item>
+        <item name="background">@drawable/efecto_boton_toks</item>
+        <item name="android:fontFamily">@font/black_toks</item>
+        <item name="fontFamily">@font/black_toks</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/whiteToks</item>
+        <item name="android:textSize">@dimen/button_circulo_central_por_cobrar_text_size</item>
+
+    </style>
+
+    <style name="estilo_boton_porcobrar_farolito" parent="Widget.AppCompat.Button">
+
+        <item name="android:background">@drawable/efecto_boton_farolito</item>
+        <item name="background">@drawable/efecto_boton_farolito</item>
+        <item name="android:fontFamily">@font/black_toks</item>
+        <item name="fontFamily">@font/black_toks</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/whiteFarolito</item>
+        <item name="android:textSize">@dimen/button_circulo_central_por_cobrar_text_size</item>
+
+    </style>
+
+    <!--Termina BotonporCobrar-->
+
+    <!--Inicia TextView DialogMessage-->
+
+    <style name="estilo_textview_dialog_message_beer" parent="Widget.AppCompat.TextView">
+
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">@font/gbook</item>
+        <item name="fontFamily">@font/gbook</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/whiteToks</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:textSize">@dimen/textView_dialog_message_text_size</item>
+
+    </style>
+
+    <style name="estilo_textview_dialog_message_toks" parent="Widget.AppCompat.TextView">
+
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/whiteToks</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:textSize">@dimen/textView_dialog_message_text_size</item>
+
+    </style>
+
+    <style name="estilo_textview_dialog_message_farolito" parent="Widget.AppCompat.TextView">
+
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/whiteFarolito</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:textSize">@dimen/textView_dialog_message_text_size</item>
+
+    </style>
+
+    <!--Termina TextView DialogMessage-->
+
+    <!--Inicia BotonesDialog-->
+
+    <style name="estilo_botones_dialog_beer" parent="Widget.AppCompat.Button">
+
+        <item name="android:background">@drawable/efecto_boton</item>
+        <item name="background">@drawable/efecto_boton</item>
+        <item name="android:fontFamily">@font/gbold</item>
+        <item name="fontFamily">@font/gbold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/backgroundBlackBeer</item>
+        <item name="android:textSize">@dimen/button_question_dialog_text_size</item>
+
+    </style>
+
+    <style name="estilo_botones_dialog_toks" parent="Widget.AppCompat.Button">
+
+        <item name="android:background">@drawable/efecto_boton_toks</item>
+        <item name="background">@drawable/efecto_boton_toks</item>
+        <item name="android:fontFamily">@font/black_toks</item>
+        <item name="fontFamily">@font/black_toks</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/whiteToks</item>
+        <item name="android:textSize">@dimen/button_question_dialog_text_size</item>
+
+    </style>
+
+    <style name="estilo_botones_dialog_farolito" parent="Widget.AppCompat.Button">
+
+        <item name="android:background">@drawable/efecto_boton_farolito</item>
+        <item name="background">@drawable/efecto_boton_farolito</item>
+        <item name="android:fontFamily">@font/black_toks</item>
+        <item name="fontFamily">@font/black_toks</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/whiteFarolito</item>
+        <item name="android:textSize">@dimen/button_question_dialog_text_size</item>
+
+    </style>
+
+    <!--Termina BotonesDialog-->
+
+    <!--Inicia TextViewDialog Reimprimir-->
+
+    <style name="estilo_textview_dialog_reimprimir_beer" parent="Widget.AppCompat.TextView">
+
+        <item name="android:fontFamily">@font/gbook</item>
+        <item name="fontFamily">@font/gbook</item>
+        <item name="android:textColor">@color/whiteToks</item>
+        <item name="android:textSize">24sp</item>
+
+    </style>
+
+    <style name="estilo_textview_dialog_reimprimir_toks" parent="Widget.AppCompat.TextView">
+
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:textColor">@color/whiteToks</item>
+        <item name="android:textSize">24sp</item>
+
+    </style>
+
+    <style name="estilo_textview_dialog_reimprimir_farolito" parent="Widget.AppCompat.TextView">
+
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:textColor">@color/whiteFarolito</item>
+        <item name="android:textSize">24sp</item>
+
+    </style>
+
+    <!--Termina TextViewDialog Reimprimir-->
+
+    <!--Inicia TextView Printer-->
+
+    <style name="estilo_textview_printer_beer">
+
+        <item name="android:textColor">@color/backgroundBlackBeer</item>
+        <item name="android:fontFamily">@font/gbold</item>
+        <item name="fontFamily">@font/gbold</item>
+
+    </style>
+
+    <style name="estilo_textview_printer_toks">
+
+        <item name="android:textColor">@color/naranjaToks</item>
+        <item name="android:fontFamily">@font/black_toks</item>
+        <item name="fontFamily">@font/black_toks</item>
+
+    </style>
+
+    <style name="estilo_textview_printer_farolito">
+
+        <item name="android:textColor">@color/rojoFarolito</item>
+        <item name="android:fontFamily">@font/black_toks</item>
+        <item name="fontFamily">@font/black_toks</item>
+
+    </style>
+
+    <!--Termina TextView Printer-->
+
+    <!--Inicia EditText Dialog-->
+
+    <style name="estilo_edittext_dialog_beer">
+
+        <item name="android:background">@drawable/efecto_edit_text</item>
+        <item name="background">@drawable/efecto_edit_text</item>
+        <item name="android:fontFamily">@font/gbook</item>
+        <item name="fontFamily">@font/gbook</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/backgroundBlackBeer</item>
+        <item name="android:textColorHint">@color/backgroundBlackBeer</item>
+        <item name="android:textSize">@dimen/editText_dialog_text_size</item>
+        <item name="android:textCursorDrawable">@drawable/color_edit_text_cursor</item>
+        <item name="android:stateListAnimator">@null</item>
+
+    </style>
+
+    <style name="estilo_edittext_dialog_toks">
+
+        <item name="android:background">@drawable/efecto_edit_text_toks</item>
+        <item name="background">@drawable/efecto_edit_text_toks</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/naranjaToks</item>
+        <item name="android:textColorHint">@color/naranjaToks</item>
+        <item name="android:textSize">@dimen/editText_dialog_text_size</item>
+        <item name="android:textCursorDrawable">@drawable/color_edit_text_cursor_toks</item>
+        <item name="android:stateListAnimator">@null</item>
+
+    </style>
+
+
+    <style name="estilo_edittext_dialog_farolito">
+
+        <item name="android:background">@drawable/efecto_edit_text_farolito</item>
+        <item name="background">@drawable/efecto_edit_text_farolito</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/bacgroundFarolito</item>
+        <item name="android:textColorHint">@color/bacgroundFarolito</item>
+        <item name="android:textSize">@dimen/editText_dialog_text_size</item>
+        <item name="android:textCursorDrawable">@drawable/color_edit_text_cursor_farolito</item>
+        <item name="android:stateListAnimator">@null</item>
+
+    </style>
+
+    <!--Termina EditText Dialog-->
+
+
+    <!--Inicia TextView Dialog Imprimir-->
+
+    <style name="estilo_textview_dialog_imprimir_beer" parent="Widget.AppCompat.TextView">
+
+        <item name="android:fontFamily">@font/gbook</item>
+        <item name="fontFamily">@font/gbook</item>
+        <item name="android:textColor">@color/doradoBeer</item>
+
+    </style>
+
+    <style name="estilo_textview_dialog_imprimir_toks" parent="Widget.AppCompat.TextView">
+
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:textColor">@color/naranjaToks</item>
+
+    </style>
+
+    <style name="estilo_textview_dialog_imprimir_farolito" parent="Widget.AppCompat.TextView">
+
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:textColor">@color/rojoFarolito</item>
+        <item name="android:textSize">20sp</item>
+
+    </style>
+
+    <!--Termina TextView Dialog Imprimir-->
+
+    <!--Inicia TextView DialogCharge-->
+
+    <style name="estilo_textview_dialog_charge_beer" parent="Widget.AppCompat.TextView">
+
+        <item name="android:fontFamily">@font/gbook</item>
+        <item name="fontFamily">@font/gbook</item>
+        <item name="android:textColor">@color/whiteBeer</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:textSize">@dimen/textView_dialog_charge_text_size</item>
+
+    </style>
+
+    <style name="estilo_textview_dialog_charge_toks" parent="Widget.AppCompat.TextView">
+
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:textColor">@color/whiteToks</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:textSize">@dimen/textView_dialog_charge_text_size</item>
+
+    </style>
+
+    <style name="estilo_textview_dialog_charge_farolito" parent="Widget.AppCompat.TextView">
+
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:textColor">@color/whiteFarolito</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:textSize">@dimen/textView_dialog_charge_text_size</item>
+
+    </style>
+
+    <!--Termina TextView DialogCharge-->
+
+    <!--Inicia TextView TotalCharge-->
+
+    <style name="estilo_textview_total_charge_beer" parent="Widget.AppCompat.TextView">
+
+        <item name="android:fontFamily">@font/gbook</item>
+        <item name="fontFamily">@font/gbook</item>
+        <item name="android:textColor">@color/doradoBeer</item>
+        <item name="android:textSize">@dimen/textView_dialog_charge_total_text_size</item>
+
+    </style>
+
+    <style name="estilo_textview_total_charge_toks" parent="Widget.AppCompat.TextView">
+
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:textColor">@color/naranjaToks</item>
+        <item name="android:textSize">@dimen/textView_dialog_charge_total_text_size</item>
+
+    </style>
+
+    <style name="estilo_textview_total_charge_farolito" parent="Widget.AppCompat.TextView">
+
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:textColor">@color/rojoFarolito</item>
+        <item name="android:textSize">@dimen/textView_dialog_charge_total_text_size</item>
+
+    </style>
+
+    <!--Termina TextView TotalCharge-->
+
+    <!--Inicia TextView DescuentoAplicado-->
+
+    <style name="estilo_textview_descuento_aplicado_beer" parent="Widget.AppCompat.TextView">
+
+        <item name="android:fontFamily">@font/gbold</item>
+        <item name="fontFamily">@font/gbold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/textView_dialog_discounts_text_size</item>
+
+    </style>
+
+    <style name="estilo_textview_descuento_aplicado_toks" parent="Widget.AppCompat.TextView">
+
+        <item name="android:fontFamily">@font/black_toks</item>
+        <item name="fontFamily">@font/black_toks</item>
+        <item name="android:textColor">@color/naranjaToks</item>
+        <item name="android:textSize">@dimen/textView_dialog_discounts_text_size</item>
+
+    </style>
+
+    <style name="estilo_textview_descuento_aplicado_farolito" parent="Widget.AppCompat.TextView">
+
+        <item name="android:fontFamily">@font/black_toks</item>
+        <item name="fontFamily">@font/black_toks</item>
+        <item name="android:textColor">@color/rojoFarolito</item>
+        <item name="android:textSize">@dimen/textView_dialog_discounts_text_size</item>
+
+    </style>
+
+    <!--Termina TextView DescuentoAplicado-->
+
+    <!--Inicia TextView PaymentItem-->
+
+    <style name="estilo_textview_payment_item_beer" parent="Widget.AppCompat.TextView">
+
+        <item name="android:textSize">@dimen/textView_datos_pagos_text_size</item>
+        <item name="android:textColor">@color/backgroundBlackBeer</item>
+        <item name="android:fontFamily">@font/gbook</item>
+        <item name="fontFamily">@font/gbook</item>
+
+    </style>
+
+    <style name="estilo_textview_payment_item_toks" parent="Widget.AppCompat.TextView">
+
+        <item name="android:textSize">@dimen/textView_datos_pagos_text_size</item>
+        <item name="android:textColor">@color/naranjaToks</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+
+    </style>
+
+    <style name="estilo_textview_payment_item_farolito" parent="Widget.AppCompat.TextView">
+
+        <item name="android:textSize">@dimen/textView_datos_pagos_text_size</item>
+        <item name="android:textColor">@color/rojoFarolito</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+
+    </style>
+
+    <!--Termina TextView PaymentItem-->
+
+    <!--Inicia RadioButton Filtro-->
+
+    <style name="estilo_radio_button_beer" parent="Widget.AppCompat.CompoundButton.RadioButton">
+
+        <item name="android:button">@drawable/radio_bg</item>
+        <item name="android:textSize">@dimen/radioButton_fragment_historico_text_size</item>
+        <item name="android:textColor">@color/whiteBeer</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="fontFamily">@font/gbook</item>
+        <item name="android:fontFamily">@font/gbook</item>
+
+    </style>
+
+    <style name="estilo_radio_button_farolito" parent="Widget.AppCompat.CompoundButton.RadioButton">
+
+        <item name="android:button">@drawable/radio_bg_farolito</item>
+        <item name="android:textSize">@dimen/radioButton_fragment_historico_text_size</item>
+        <item name="android:textColor">@color/whiteFarolito</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+
+    </style>
+
+    <style name="estilo_radio_button_toks" parent="Widget.AppCompat.CompoundButton.RadioButton">
+
+        <item name="android:button">@drawable/radio_bg_toks</item>
+        <item name="android:textSize">@dimen/radioButton_fragment_historico_text_size</item>
+        <item name="android:textColor">@color/whiteToks</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:fontFamily">@font/book_toks</item>
+
+    </style>
+
+    <!--Termina RadioButton Filtro-->
+
+
+    <!--Inicia DateTimePicker-->
+
+    <style name="estilo_date_time_picker_beer" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="colorAccent">@color/doradoBeer</item>                   <!--header background-->
+        <item name="android:textColorPrimaryInverse">@color/black</item>
+        <item name="android:textColorSecondaryInverse">@color/black</item>
+        <item name="android:windowBackground">@color/doradoBeer
+        </item>     <!--calendar background-->
+        <item name="android:colorControlActivated">@color/progressbar_color_beer
+        </item> <!--selected day-->
+        <item name="android:textColorPrimary">@color/black</item>  <!--days of the month-->
+        <item name="android:textColorSecondary">@color/black</item>    <!--days of the week-->
+        <item name="android:buttonBarPositiveButtonStyle">@style/DatePickerButtonStylePositive
+        </item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/DatePickerButtonStylePositive
+        </item>
+    </style>
+
+    <style name="estilo_date_time_picker_toks" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="colorAccent">@color/naranjaToks
+        </item>                   <!--header background-->
+        <item name="android:textColorPrimaryInverse">@color/whiteToks</item>
+        <item name="android:textColorSecondaryInverse">@color/whiteToks</item>
+        <item name="android:windowBackground">@color/naranjaToks
+        </item>     <!--calendar background-->
+        <item name="android:colorControlActivated">@color/ripple_efect_toks</item> <!--selected day-->
+        <item name="android:textColorPrimary">@color/black</item>  <!--days of the month-->
+        <item name="android:textColorSecondary">@color/black</item>    <!--days of the week-->
+        <item name="android:buttonBarPositiveButtonStyle">@style/DatePickerButtonStylePositiveToks
+        </item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/DatePickerButtonStylePositiveToks
+        </item>
+    </style>
+
+    <style name="estilo_date_time_picker_farolito" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="colorAccent">@color/rojoFarolito
+        </item>                   <!--header background-->
+        <item name="android:textColorPrimaryInverse">@color/whiteFarolito</item>
+        <item name="android:textColorSecondaryInverse">@color/whiteFarolito</item>
+        <item name="android:windowBackground">@color/rojoFarolito
+        </item>     <!--calendar background-->
+        <item name="android:colorControlActivated">@color/white</item> <!--selected day-->
+        <item name="android:textColorPrimary">@color/whiteFarolito</item>  <!--days of the month-->
+        <item name="android:textColorSecondary">@color/whiteFarolito
+        </item>    <!--days of the week-->
+        <item name="android:buttonBarPositiveButtonStyle">
+            @style/DatePickerButtonStylePositiveFarolito
+        </item>
+        <item name="android:buttonBarNegativeButtonStyle">
+            @style/DatePickerButtonStylePositiveFarolito
+        </item>
+    </style>
+
+    <!--Termina DateTimePicker-->
+
+    <!--Inicia ButtonStyle Picker-->
+
+    <style name="DatePickerButtonStylePositive" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/gbold</item>
+        <item name="android:fontFamily">@font/gbold</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:background">@color/doradoBeer</item>
+    </style>
+
+    <style name="DatePickerButtonStylePositiveToks" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/whiteToks</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/black_toks</item>
+        <item name="android:fontFamily">@font/black_toks</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:background">@color/naranjaToks</item>
+    </style>
+
+    <style name="DatePickerButtonStylePositiveFarolito" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/whiteFarolito</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/black_toks</item>
+        <item name="android:fontFamily">@font/black_toks</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:background">@color/rojoFarolito</item>
+    </style>
+
+    <!--Termina ButtonStyle Picker-->
+
+    <!--Inicia estilo TextViewFriltrar-->
+
+    <style name="estilo_textview_filtrarpor_beer" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/gbook</item>
+        <item name="fontFamily">@font/gbook</item>
+        <item name="android:textSize">@dimen/textView_fragment_historico_filtrar_por_text_size</item>
+        <item name="android:textColor">@color/whiteBeer</item>
+    </style>
+
+    <style name="estilo_textview_filtrarpor_toks" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/book_toks</item>
+        <item name="fontFamily">@font/book_toks</item>
+        <item name="android:textSize">@dimen/textView_fragment_historico_filtrar_por_text_size</item>
+        <item name="android:textColor">@color/whiteToks</item>
+    </style>
+
+    <!--Termina estilo TextViewFriltrar-->
+
+
+    <style name="DialogTheme">
+
+        <item name="android:windowEnterAnimation">@anim/slide_left</item>
+        <item name="android:windowExitAnimation">@anim/slide_right</item>
+        <item name="android:windowSoftInputMode">stateHidden</item>
+
+
+    </style>
+
+
+</resources>

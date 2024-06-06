@@ -1,0 +1,241 @@
+<!--
+  ~ /**
+  ~  * Created by Gerardo Ruiz on 12/17/20 11:01 AM
+  ~  * Copyright (c) 2020 . All rights reserved.
+  ~  * Last modified 12/17/20 11:01 AM
+  ~  */
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/fondo_negro"
+    tools:context="com.View.Fragments.HistoricosPagosFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="100dp"
+            android:background="?attr/fondo_separadores"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButtonHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:src="?attr/icon_inicio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnBoucher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="?attr/icon_reimprimir_boucher"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButtonHome"
+            app:layout_constraintEnd_toStartOf="@+id/imageButtonHome"
+            app:layout_constraintTop_toTopOf="@+id/imageButtonHome"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageButton
+            android:id="@+id/btnTicket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="?attr/icon_reimprimir_ticket"
+            app:layout_constraintBottom_toBottomOf="@+id/btnBoucher"
+            app:layout_constraintEnd_toStartOf="@+id/btnBoucher"
+            app:layout_constraintTop_toTopOf="@+id/btnBoucher"
+            app:layout_constraintVertical_bias="0.666" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/whiteBeer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <EditText
+            android:id="@+id/editTextToken"
+            style="?attr/fondo_editText_login"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:ems="10"
+            android:hint="Ingrese Token"
+            android:inputType="number"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Filtrar busqueda por:"
+            style="?attr/estilo_textview_filtrarpor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <EditText
+            android:id="@+id/editTextEstafetaToken"
+            style="?attr/fondo_editText_login"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:ems="10"
+            android:hint="Ingrese estafeta autorizadora"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+        <Button
+            android:id="@+id/buttonConfirmar"
+            style="?attr/fondo_nodialog_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:text="Confirmar"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/editTextToken"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextToken"
+            app:layout_constraintTop_toBottomOf="@+id/editTextToken" />
+
+        <Button
+            android:id="@+id/buttonContinuar"
+            style="?attr/fondo_nodialog_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:text="Continuar"
+            app:layout_constraintEnd_toEndOf="@+id/editTextEstafetaToken"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextEstafetaToken"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEstafetaToken" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCuentasCerradas"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            tools:listitem="@layout/item_cuenta_cerrada"
+            android:visibility="gone"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextToken" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCuentasCobradas"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            tools:listitem="@layout/item_cuenta_cerrada"
+            android:visibility="gone"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextToken" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+            <RadioButton
+                android:id="@+id/radioButtonFolio"
+                style="?attr/estilo_radiobutton_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Folio" />
+
+            <RadioButton
+                android:id="@+id/radioButtonEstafeta"
+                style="?attr/estilo_radiobutton_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estafeta" />
+
+            <RadioButton
+                android:id="@+id/radioButtonVendedor"
+                style="?attr/estilo_radiobutton_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre Vendedor" />
+
+            <RadioButton
+                android:id="@+id/radioButtonDia"
+                style="?attr/estilo_radiobutton_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dia" />
+        </RadioGroup>
+
+        <ImageButton
+            android:id="@+id/imageButtonReporte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:src="?attr/icon_caja"
+            app:layout_constraintBottom_toBottomOf="@+id/btnTicket"
+            app:layout_constraintEnd_toStartOf="@+id/btnTicket"
+            app:layout_constraintTop_toTopOf="@+id/btnTicket"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/imageButtonCuentaCerrada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:clickable="false"
+            android:background="@android:color/transparent"
+            android:src="?attr/icon_close_account"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButtonReporte"
+            app:layout_constraintEnd_toStartOf="@+id/imageButtonReporte"
+            app:layout_constraintTop_toTopOf="@+id/imageButtonReporte"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

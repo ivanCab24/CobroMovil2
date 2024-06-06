@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/ripple_efect_beer">
+
+    <item>
+        <selector>
+
+            <item android:state_pressed="true">
+                <color android:color="@color/doradoBeer"/>
+            </item>
+
+            <item android:state_enabled="false">
+
+                <color android:color="@color/boton_inhabilitado_beer"/>
+
+            </item>
+
+            <item>
+                <color android:color="@color/doradoBeer"/>
+            </item>
+
+
+        </selector>
+    </item>
+
+
+
+</ripple>
